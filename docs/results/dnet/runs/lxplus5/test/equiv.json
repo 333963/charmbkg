@@ -1,0 +1,54 @@
+{
+ "folds": 3,
+ "epochs": 2,
+ "threads": 4,
+ "n": 4000,
+ "torch": "2.11.0",
+ "host": "b9g03p9322.cern.ch",
+ "cmp": {
+  "D0.tr.H+e04.mc.d5.s1": {
+   "max_abs_dweight_per_fold": [
+    0.5808595418930054,
+    0.0,
+    0.0
+   ],
+   "max_abs_dscore_folds_ge1": 0.0,
+   "rows_folds_ge1": 10574,
+   "max_abs_dscore_fold0": 0.1120259165763855,
+   "new_fold0_rerun_max_abs_dweight": 0.0,
+   "old_rerun_max_abs_dweight_per_fold": [
+    0.5941692590713501,
+    0.0,
+    0.0
+   ],
+   "best_epoch_same_folds_ge1": true,
+   "meta_keys_missing": [],
+   "sec_old": 23.4,
+   "sec_new": 83.2,
+   "dn4_lib_read_max_abs": 0.0
+  },
+  "Dplus.tr.H+e04.mc.d5.s1": {
+   "max_abs_dweight_per_fold": [
+    0.5753588676452637,
+    0.0,
+    0.0
+   ],
+   "max_abs_dscore_folds_ge1": 0.0,
+   "rows_folds_ge1": 8632,
+   "max_abs_dscore_fold0": 0.08632147312164307,
+   "new_fold0_rerun_max_abs_dweight": 0.0,
+   "old_rerun_max_abs_dweight_per_fold": [
+    0.5970034003257751,
+    0.0,
+    0.0
+   ],
+   "best_epoch_same_folds_ge1": true,
+   "meta_keys_missing": [],
+   "sec_old": 21.6,
+   "sec_new": 84.8,
+   "dn4_lib_read_max_abs": 5.960464477539063e-08
+  }
+ },
+ "equivalent": true,
+ "mechanics_ok": true
+}

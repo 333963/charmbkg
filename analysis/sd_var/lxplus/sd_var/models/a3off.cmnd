@@ -1,0 +1,9 @@
+! a3off.cmnd — oficjalna konfiguracja ATLAS A3 (Athena, Pythia8_A3_NNPDF23LO_Common.py, odczyt 19.11.2026 z atlas-sw-doxygen):
+! oprócz ustawień z base_A3: mode = 0 (σ własne = domyślne Pythii 8/8/4 mb, wpisane jawnie), CD wyłączone, OwnbMinDD = 5, rho = 0.
+SigmaDiffractive:mode = 0
+SigmaTotal:sigmaXB = 8.
+SigmaTotal:sigmaAX = 8.
+SigmaTotal:sigmaXX = 4.
+SigmaTotal:sigmaAXB = 0.
+SigmaDiffractive:OwnbMinDD = 5.
+SigmaElastic:rho = 0.0

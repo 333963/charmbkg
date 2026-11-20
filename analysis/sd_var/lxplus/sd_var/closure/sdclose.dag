@@ -1,0 +1,20 @@
+# sdclose.dag — domknięcie CRqcd (19.11.2026): nowe ziarna 1230101 (dv), 1260101–1260106 (nv; 4 brakujące + 2 zapasowe), 2 × diagnostyka gdb. Bez merge (ręcznie, do merged_close/).
+JOB g_dv_CRqcd_101 sdclose.sub
+VARS g_dv_CRqcd_101 script="sd_job.sh" step="gen" model="dv_CRqcd" seed="1230101" nev="1000000" cm="base_A3,proc_dif,own,crqcd" maxrt="5400" penv="SD_OUT=/eos/user/k/klyczak/charm_q/sd_var FORCE=0"
+JOB g_nv_CRqcd_101 sdclose.sub
+VARS g_nv_CRqcd_101 script="sd_job.sh" step="gen" model="nv_CRqcd" seed="1260101" nev="1000000" cm="base_A3,proc_nd,crqcd" maxrt="14400" penv="SD_OUT=/eos/user/k/klyczak/charm_q/sd_var FORCE=0"
+JOB g_nv_CRqcd_102 sdclose.sub
+VARS g_nv_CRqcd_102 script="sd_job.sh" step="gen" model="nv_CRqcd" seed="1260102" nev="1000000" cm="base_A3,proc_nd,crqcd" maxrt="14400" penv="SD_OUT=/eos/user/k/klyczak/charm_q/sd_var FORCE=0"
+JOB g_nv_CRqcd_103 sdclose.sub
+VARS g_nv_CRqcd_103 script="sd_job.sh" step="gen" model="nv_CRqcd" seed="1260103" nev="1000000" cm="base_A3,proc_nd,crqcd" maxrt="14400" penv="SD_OUT=/eos/user/k/klyczak/charm_q/sd_var FORCE=0"
+JOB g_nv_CRqcd_104 sdclose.sub
+VARS g_nv_CRqcd_104 script="sd_job.sh" step="gen" model="nv_CRqcd" seed="1260104" nev="1000000" cm="base_A3,proc_nd,crqcd" maxrt="14400" penv="SD_OUT=/eos/user/k/klyczak/charm_q/sd_var FORCE=0"
+JOB g_nv_CRqcd_105 sdclose.sub
+VARS g_nv_CRqcd_105 script="sd_job.sh" step="gen" model="nv_CRqcd" seed="1260105" nev="1000000" cm="base_A3,proc_nd,crqcd" maxrt="14400" penv="SD_OUT=/eos/user/k/klyczak/charm_q/sd_var FORCE=0"
+JOB g_nv_CRqcd_106 sdclose.sub
+VARS g_nv_CRqcd_106 script="sd_job.sh" step="gen" model="nv_CRqcd" seed="1260106" nev="1000000" cm="base_A3,proc_nd,crqcd" maxrt="14400" penv="SD_OUT=/eos/user/k/klyczak/charm_q/sd_var FORCE=0"
+JOB d_dv_CRqcd_8 sdclose.sub
+VARS d_dv_CRqcd_8 script="closure/sd_diag.sh" step="diag" model="dv_CRqcd" seed="1230008" nev="1000000" cm="base_A3,proc_dif,own,crqcd" maxrt="5400" penv="SD_OUT=/eos/user/k/klyczak/charm_q/sd_var FORCE=0 DIAG_DEADLINE=3600"
+JOB d_nv_CRqcd_8 sdclose.sub
+VARS d_nv_CRqcd_8 script="closure/sd_diag.sh" step="diag" model="nv_CRqcd" seed="1260008" nev="1000000" cm="base_A3,proc_nd,crqcd" maxrt="14400" penv="SD_OUT=/eos/user/k/klyczak/charm_q/sd_var FORCE=0 DIAG_DEADLINE=11400"
+RETRY ALL_NODES 0

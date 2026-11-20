@@ -1,0 +1,17 @@
+{
+ "data": {
+  "n_groups": 10,
+  "n_pairs": 1233588,
+  "n_all_d0_win": 8886500
+ },
+ "fd": {
+  "n_groups": 5,
+  "n_pairs": 178747,
+  "n_all_d0_win": 1062099
+ },
+ "mb": {
+  "n_groups": 5,
+  "n_pairs": 212259,
+  "n_all_d0_win": 1926946
+ }
+}

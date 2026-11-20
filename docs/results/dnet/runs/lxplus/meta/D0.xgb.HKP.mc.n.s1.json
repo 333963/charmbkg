@@ -1,0 +1,101 @@
+{
+ "sp": "D0",
+ "model": "xgb",
+ "feats": "HKP",
+ "bkg": "mc",
+ "dec": "n",
+ "seed": 1,
+ "full": false,
+ "tag": "D0.xgb.HKP.mc.n.s1",
+ "features": [
+  "log_pt",
+  "abs_eta",
+  "chi2",
+  "Lxy",
+  "impact_sig",
+  "abs_impact_z0",
+  "d_max_abs_d0",
+  "pointing",
+  "abs_cos_theta_star",
+  "abs_impact_sig",
+  "d_min_abs_d0",
+  "d_max_abs_z0",
+  "d_max_abs_eta",
+  "dedx_K",
+  "log_p_K",
+  "npts_K",
+  "dedx_pi_max",
+  "log_p_pi_min",
+  "d0prod_nf",
+  "d0sigK_nf",
+  "d0sigPi_nf",
+  "d0sigMin_nf",
+  "d0sigMax_nf",
+  "d0chi2_nf",
+  "dz0_nf",
+  "absImpact_cn",
+  "d0AbsZ0_cn",
+  "d1AbsZ0_cn",
+  "ctau_nf",
+  "ctsK_nf",
+  "ptAsym_nf",
+  "dMinPt_nf",
+  "dMaxPt_nf",
+  "dMinPtRatio_cn",
+  "dMaxPtRatio_cn",
+  "dR_nf",
+  "apAlpha_cn",
+  "bbK_K_nf",
+  "bbK_pi_nf",
+  "bbPi_pi_nf",
+  "bbPi_K_nf",
+  "pPi_nf",
+  "nptsPi_nf",
+  "dedxPi_nf"
+ ],
+ "n_feat": 44,
+ "n_pool": 1015087,
+ "n_sig": 214988,
+ "n_bkg": 800099,
+ "n_dec": 800099,
+ "nparams": 924,
+ "npar_unit": "drzewa (fold 0)",
+ "folds": 5,
+ "fit": [
+  {
+   "best_it": 873,
+   "sec": 102.4
+  },
+  {
+   "best_it": 1178,
+   "sec": 162.2
+  },
+  {
+   "best_it": 985,
+   "sec": 136.8
+  },
+  {
+   "best_it": 996,
+   "sec": 130.1
+  },
+  {
+   "best_it": 970,
+   "sec": 102.3
+  }
+ ],
+ "sec": 708.5,
+ "threads": 4,
+ "device": "cpu",
+ "hp": {
+  "tree_method": "hist",
+  "n_estimators": 1500,
+  "learning_rate": 0.05,
+  "max_depth": 6,
+  "min_child_weight": 5,
+  "subsample": 0.8,
+  "colsample_bytree": 0.8,
+  "reg_lambda": 1.0,
+  "early_stopping_rounds": 50,
+  "n_jobs": 0
+ }
+}

@@ -1,0 +1,3 @@
+SoftQCD:singleDiffractive = on
+SoftQCD:doubleDiffractive = on
+SoftQCD:centralDiffractive = on

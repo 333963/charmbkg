@@ -1,0 +1,18 @@
+# Węzeł DAG CAND_D23 (VARS node, args, cpus, mem, disk, flavour, penv z cd.dag).
+Q          = /afs/cern.ch/user/k/klyczak/private/charm_q/Q_lxplus
+universe   = vanilla
+executable = /bin/bash
+arguments  = $(Q)/cand_d23/cd_job.sh $(args)
+output     = $(Q)/logs/cand_d23/cd_$(node).$(ClusterId).out
+error      = $(Q)/logs/cand_d23/cd_$(node).$(ClusterId).err
+log        = $(Q)/logs/cand_d23/cd.log
+request_cpus   = $(cpus)
+request_memory = $(mem)
+request_disk   = $(disk)
++JobFlavour    = "$(flavour)"
++JobBatchName  = "charm_candd23"
+should_transfer_files = NO
+getenv     = False
+# getenv=False → zmienne biegu przekazywane jawnie z cd.dag
+environment = "$(penv)"
+queue

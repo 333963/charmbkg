@@ -1,0 +1,2 @@
+! proc_all.cmnd — krok xsec: wszystkie procesy miękkie naraz → σ_ND/SD/DD/CD danej konfiguracji (JSON: proc.<kod>_0.sigma_mb)
+SoftQCD:all = on

@@ -1,0 +1,2 @@
+! MBR z ε = 0,08: wartość najlepiej opisująca przekroje dyfrakcyjne CMS przy 7 TeV (α_P(0) = 1,08; domyślne 0,104)
+SigmaDiffractive:MBRepsilon = 0.08

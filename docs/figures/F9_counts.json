@@ -1,0 +1,6 @@
+{
+ "n_true": 321378,
+ "n_hypo_swap1": 106390,
+ "cm_sig_true_swap": 23054,
+ "cm_swap_true_correct": 21866
+}

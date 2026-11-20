@@ -1,0 +1,16 @@
+# Węzeł DAG DNET etap 4 — CPU (VARS node, args, cpus, mem, disk, flavour, soft, penv z dn4.dag). Bez GPU.
+Q          = /afs/cern.ch/user/k/klyczak/private/charm_q/Q_lxplus
+universe   = vanilla
+executable = /bin/bash
+arguments  = $(Q)/dnet4/dn4_job.sh $(args)
+output     = $(Q)/logs/dnet4/dn4_$(node).$(ClusterId).out
+error      = $(Q)/logs/dnet4/dn4_$(node).$(ClusterId).err
+log        = $(Q)/logs/dnet4/dn4.log
+request_cpus   = $(cpus)
+request_memory = $(mem)
+request_disk   = $(disk)
++JobFlavour    = "$(flavour)"
+should_transfer_files = NO
+getenv     = False
+environment = "$(penv) DN4_SOFTNODE=$(soft)"
+queue

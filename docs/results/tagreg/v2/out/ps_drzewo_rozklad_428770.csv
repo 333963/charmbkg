@@ -1,0 +1,76 @@
+lancuch,ps_calk,L1,ps_L1,czynnik_HLT,n_pass_GRL
+HLT_2j10_20detaAA_L1AFP_A_OR_C,"[np.float64(1.0), np.float64(2.0)]",L1_AFP_A_OR_C,"[np.float64(1.0), np.float64(2.0)]",[np.float64(1.0)],53368
+HLT_2j20_20detaAA_L1MBTS_2,"[np.float64(25.0), np.float64(50.0)]",L1_MBTS_2,"[np.float64(25.0), np.float64(50.0)]",[np.float64(1.0)],127455
+HLT_2j20_20detaAA_L1RD0_FILLED,[np.float64(1000.013)],L1_RD0_FILLED,[np.float64(1000.013)],[np.float64(1.0)],5818
+HLT_2j20_L1RD0_FILLED,[np.float64(1000.013)],L1_RD0_FILLED,[np.float64(1000.013)],[np.float64(1.0)],13166
+HLT_j10f_L1MBTS_2,"[np.float64(25.0), np.float64(50.0)]",L1_MBTS_2,"[np.float64(25.0), np.float64(50.0)]",[np.float64(1.0)],536354
+HLT_j10f_L1RD0_FILLED,[np.float64(1000.013)],L1_RD0_FILLED,[np.float64(1000.013)],[np.float64(1.0)],24528
+HLT_j20_L1AFP_A_OR_C,"[np.float64(1.0), np.float64(2.0)]",L1_AFP_A_OR_C,"[np.float64(1.0), np.float64(2.0)]",[np.float64(1.0)],389730
+HLT_j20_L1AFP_A_OR_C_J12,[np.float64(1.0)],L1_AFP_A_OR_C_J12,[np.float64(1.0)],[np.float64(1.0)],26042
+HLT_j20_L1J12,[np.float64(1.0)],L1_J12,[np.float64(1.0)],[np.float64(1.0)],4483752
+HLT_j20_L1MBTS_2,"[np.float64(25.0), np.float64(50.0)]",L1_MBTS_2,"[np.float64(25.0), np.float64(50.0)]",[np.float64(1.0)],1243225
+HLT_j20_L1RD0_FILLED,[np.float64(1000.013)],L1_RD0_FILLED,[np.float64(1000.013)],[np.float64(1.0)],56952
+HLT_j20f_L1AFP_A_OR_C,"[np.float64(1.0), np.float64(2.0)]",L1_AFP_A_OR_C,"[np.float64(1.0), np.float64(2.0)]",[np.float64(1.0)],43722
+HLT_mb_mbts_L1MBTS_1,[np.float64(50006.602)],L1_MBTS_1,[np.float64(5000.66)],[np.float64(10.0)],143
+HLT_mb_mbts_L1MBTS_1_1,[np.float64(50006.602)],L1_MBTS_1_1,[np.float64(5000.66)],[np.float64(10.0)],141
+HLT_mb_mbts_L1MBTS_2,"[np.float64(625.0), np.float64(1250.001)]",L1_MBTS_2,"[np.float64(25.0), np.float64(50.0)]",[np.float64(25.0)],65398
+HLT_mb_mbts_L1RD0_EMPTY,[np.float64(986895.0)],L1_RD0_EMPTY,[np.float64(986895.0)],[np.float64(1.0)],0
+HLT_mb_mbts_L1RD0_FILLED,[np.float64(200002.562)],L1_RD0_FILLED,[np.float64(1000.013)],[np.float64(200.0)],393
+HLT_mb_mbts_L1RD0_UNPAIRED_ISO,[np.float64(49932.188)],L1_RD0_UNPAIRED_ISO,[np.float64(49932.188)],[np.float64(1.0)],0
+HLT_mb_mbts_all_L1MBTS_2_EMPTY,[np.float64(99864.375)],L1_MBTS_2_EMPTY,[np.float64(99864.375)],[np.float64(1.0)],0
+HLT_mb_mbts_all_L1MBTS_A,[np.float64(25003.301)],L1_MBTS_A,[np.float64(5000.66)],[np.float64(5.0)],284
+HLT_mb_mbts_all_L1MBTS_C,[np.float64(25003.301)],L1_MBTS_C,[np.float64(5000.66)],[np.float64(5.0)],303
+HLT_mb_sptrk_L1MBTS_1,[np.float64(0.0)],L1_MBTS_1,[np.float64(5000.66)],[np.float64(0.0)],0
+HLT_mb_sptrk_L1MBTS_2,[np.float64(0.0)],L1_MBTS_2,"[np.float64(25.0), np.float64(50.0)]",[np.float64(0.0)],0
+HLT_mb_sptrk_L1RD0_FILLED,[np.float64(0.0)],L1_RD0_FILLED,[np.float64(1000.013)],[np.float64(0.0)],0
+HLT_mb_sptrk_pt2_L1AFP_A_AND_C,[np.float64(1.0)],L1_AFP_A_AND_C,[np.float64(1.0)],[np.float64(1.0)],41189
+HLT_mb_sptrk_pt2_L1AFP_A_OR_C,"[np.float64(10.0), np.float64(20.0)]",L1_AFP_A_OR_C,"[np.float64(1.0), np.float64(2.0)]",[np.float64(10.0)],50912
+HLT_mb_sptrk_pt2_L1MBTS_2,"[np.float64(625.0), np.float64(1250.001)]",L1_MBTS_2,"[np.float64(25.0), np.float64(50.0)]",[np.float64(25.0)],59822
+HLT_mb_sptrk_pt2_L1RD0_FILLED,[np.float64(1000.013)],L1_RD0_FILLED,[np.float64(1000.013)],[np.float64(1.0)],68379
+HLT_mb_sptrk_pt4_L1AFP_A_AND_C,[np.float64(1.0)],L1_AFP_A_AND_C,[np.float64(1.0)],[np.float64(1.0)],4335
+HLT_mb_sptrk_pt4_L1AFP_A_OR_C,"[np.float64(1.0), np.float64(2.0)]",L1_AFP_A_OR_C,"[np.float64(1.0), np.float64(2.0)]",[np.float64(1.0)],221191
+HLT_mb_sptrk_pt4_L1MBTS_1,[np.float64(5000.66)],L1_MBTS_1,[np.float64(5000.66)],[np.float64(1.0)],1051
+HLT_mb_sptrk_pt4_L1MBTS_2,"[np.float64(25.0), np.float64(50.0)]",L1_MBTS_2,"[np.float64(25.0), np.float64(50.0)]",[np.float64(1.0)],836950
+HLT_mb_sptrk_pt4_L1RD0_FILLED,[np.float64(1000.013)],L1_RD0_FILLED,[np.float64(1000.013)],[np.float64(1.0)],38142
+HLT_mb_sptrk_pt6_L1AFP_A_AND_C,[np.float64(1.0)],L1_AFP_A_AND_C,[np.float64(1.0)],[np.float64(1.0)],977
+HLT_mb_sptrk_pt6_L1AFP_A_OR_C,"[np.float64(1.0), np.float64(2.0)]",L1_AFP_A_OR_C,"[np.float64(1.0), np.float64(2.0)]",[np.float64(1.0)],102051
+HLT_mb_sptrk_pt6_L1MBTS_1,[np.float64(5000.66)],L1_MBTS_1,[np.float64(5000.66)],[np.float64(1.0)],700
+HLT_mb_sptrk_pt6_L1MBTS_2,"[np.float64(25.0), np.float64(50.0)]",L1_MBTS_2,"[np.float64(25.0), np.float64(50.0)]",[np.float64(1.0)],375825
+HLT_mb_sptrk_pt6_L1RD0_FILLED,[np.float64(1000.013)],L1_RD0_FILLED,[np.float64(1000.013)],[np.float64(1.0)],17089
+HLT_mb_sptrk_pt8_L1AFP_A_AND_C,[np.float64(1.0)],L1_AFP_A_AND_C,[np.float64(1.0)],[np.float64(1.0)],367
+HLT_mb_sptrk_pt8_L1AFP_A_OR_C,"[np.float64(1.0), np.float64(2.0)]",L1_AFP_A_OR_C,"[np.float64(1.0), np.float64(2.0)]",[np.float64(1.0)],48680
+HLT_mb_sptrk_pt8_L1MBTS_1,[np.float64(5000.66)],L1_MBTS_1,[np.float64(5000.66)],[np.float64(1.0)],471
+HLT_mb_sptrk_pt8_L1MBTS_2,"[np.float64(25.0), np.float64(50.0)]",L1_MBTS_2,"[np.float64(25.0), np.float64(50.0)]",[np.float64(1.0)],176484
+HLT_mb_sptrk_pt8_L1RD0_FILLED,[np.float64(1000.013)],L1_RD0_FILLED,[np.float64(1000.013)],[np.float64(1.0)],7978
+HLT_mb_sptrk_vetombts2in_L1RD0_FILLED,[np.float64(1000.013)],L1_RD0_FILLED,[np.float64(1000.013)],[np.float64(1.0)],0
+HLT_noalg_L1AFP_A_AND_C,[np.float64(1.0)],L1_AFP_A_AND_C,[np.float64(1.0)],[np.float64(1.0)],372348
+HLT_noalg_L1AFP_A_OR_C,"[np.float64(60.0), np.float64(120.0)]",L1_AFP_A_OR_C,"[np.float64(1.0), np.float64(2.0)]",[np.float64(60.0)],708944
+HLT_noalg_L1AFP_A_OR_C_EMPTY,[np.float64(1.0)],L1_AFP_A_OR_C_EMPTY,[np.float64(1.0)],[np.float64(1.0)],7
+HLT_noalg_L1AFP_A_OR_C_FIRSTEMPTY,[np.float64(1.0)],L1_AFP_A_OR_C_FIRSTEMPTY,[np.float64(1.0)],[np.float64(1.0)],323
+HLT_noalg_L1AFP_A_OR_C_J12,[np.float64(1.0)],L1_AFP_A_OR_C_J12,[np.float64(1.0)],[np.float64(1.0)],26048
+HLT_noalg_L1AFP_A_OR_C_UNPAIRED_ISO,[np.float64(1.0)],L1_AFP_A_OR_C_UNPAIRED_ISO,[np.float64(1.0)],[np.float64(1.0)],354
+HLT_noalg_L1AFP_A_OR_C_UNPAIRED_NONISO,[np.float64(1.0)],L1_AFP_A_OR_C_UNPAIRED_NONISO,[np.float64(1.0)],[np.float64(1.0)],11
+HLT_noalg_L1AFP_FSA_BGRP12,[np.float64(2500.002)],L1_AFP_FSA_BGRP12,[np.float64(50.0)],[np.float64(50.0)],15118
+HLT_noalg_L1AFP_FSC_BGRP12,[np.float64(2500.002)],L1_AFP_FSC_BGRP12,[np.float64(50.0)],[np.float64(50.0)],11642
+HLT_noalg_L1AFP_NSA_BGRP12,[np.float64(2500.002)],L1_AFP_NSA_BGRP12,[np.float64(50.0)],[np.float64(50.0)],12725
+HLT_noalg_L1AFP_NSC_BGRP12,[np.float64(2500.002)],L1_AFP_NSC_BGRP12,[np.float64(50.0)],[np.float64(50.0)],8213
+HLT_noalg_L1EM22VHI,[np.float64(1.0)],(brak w drzewie),,,63867
+HLT_noalg_L1EM3,[np.float64(249.999)],L1_EM3,[np.float64(249.999)],[np.float64(1.0)],200875
+HLT_noalg_L1EM7,[np.float64(20.0)],L1_EM7,[np.float64(20.0)],[np.float64(1.0)],256920
+HLT_noalg_L1J100,[np.float64(1.0)],(brak w drzewie),,,8363
+HLT_noalg_L1J12,[np.float64(1.0)],L1_J12,[np.float64(1.0)],[np.float64(1.0)],4485504
+HLT_noalg_L1J75,[np.float64(1.0)],(brak w drzewie),,,23077
+HLT_noalg_L1J85,[np.float64(1.0)],(brak w drzewie),,,15016
+HLT_noalg_L1MBTS_2,[np.float64(0.0)],L1_MBTS_2,"[np.float64(25.0), np.float64(50.0)]",[np.float64(0.0)],0
+HLT_noalg_L1MBTS_2_EMPTY,[np.float64(99864.375)],L1_MBTS_2_EMPTY,[np.float64(99864.375)],[np.float64(1.0)],0
+HLT_noalg_L1MBTS_2_UNPAIRED_ISO,[np.float64(1.0)],L1_MBTS_2_UNPAIRED_ISO,[np.float64(1.0)],[np.float64(1.0)],317
+HLT_noalg_L1MBTS_A,[np.float64(5000.66)],L1_MBTS_A,[np.float64(5000.66)],[np.float64(1.0)],1522
+HLT_noalg_L1MBTS_C,[np.float64(5000.66)],L1_MBTS_C,[np.float64(5000.66)],[np.float64(1.0)],1519
+HLT_noalg_L1MU3V,[np.float64(15.0)],L1_MU3V,[np.float64(15.0)],[np.float64(1.0)],118845
+HLT_noalg_L1MU5VF_AFP_A_OR_C,[np.float64(1.0)],(brak w drzewie),,,2536
+HLT_noalg_L1RD0_FILLED,[np.float64(0.0)],L1_RD0_FILLED,[np.float64(1000.013)],[np.float64(0.0)],0
+HLT_noalg_L1TAU60,[np.float64(1.0)],(brak w drzewie),,,16161
+HLT_noalg_mb_L1MBTS_1,[np.float64(5000.66)],L1_MBTS_1,[np.float64(5000.66)],[np.float64(1.0)],1631
+HLT_noalg_mb_L1MBTS_1_1,[np.float64(5000.66)],L1_MBTS_1_1,[np.float64(5000.66)],[np.float64(1.0)],1392
+HLT_noalg_mb_L1MBTS_2,"[np.float64(625.0), np.float64(1250.001)]",L1_MBTS_2,"[np.float64(25.0), np.float64(50.0)]",[np.float64(25.0)],65406
+HLT_noalg_mb_L1RD0_FILLED,[np.float64(50000.641)],L1_RD0_FILLED,[np.float64(1000.013)],[np.float64(50.0)],1535

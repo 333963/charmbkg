@@ -1,0 +1,2 @@
+! σ_ref(Pomeron–p) = 5 mb (domyślne 10; mniejsze → więcej MPI w układzie X)
+Diffraction:sigmaRefPomP = 5.

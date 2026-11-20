@@ -1,0 +1,87 @@
+{
+ "n_data_p1": 371673,
+ "n_data_p1_SR": 165078,
+ "feats": [
+  "log_pt",
+  "abs_eta",
+  "chi2",
+  "Lxy",
+  "impact_sig",
+  "abs_impact_z0",
+  "d_max_abs_d0",
+  "pointing",
+  "abs_cos_theta_star",
+  "abs_impact_sig",
+  "d_min_abs_d0",
+  "d_max_abs_z0",
+  "d_max_abs_eta",
+  "dedx_K",
+  "log_p_K",
+  "npts_K",
+  "dedx_pi_max",
+  "log_p_pi_min"
+ ],
+ "pol2_pre": {
+  "N_SR": 164594.70208219634,
+  "err": 1334.8183845698895,
+  "chi2ndf": 2.081007748466875,
+  "N_SR_raw": 165088
+ },
+ "wp0.8": {
+  "eff_data_SR": 0.07332675399622658,
+  "err": 0.0021414893031061278,
+  "chi2ndf_post": 1.4334950605182621,
+  "N_post_SR_fit": 12069.195228663415,
+  "N_post_SR_raw": 12495,
+  "eff_sbcopy": 0.07212241096858835,
+  "eff_mcraw_SR": 0.09175480714787217,
+  "eff_salad_hgb_SR": 0.07549030680203178,
+  "eff_salad_sk_mlp_SR": 0.07188801376011449,
+  "ratio_salad_hgb": 1.029505640000327,
+  "ratio_salad_sk_mlp": 0.9803790546055519,
+  "ratio_sbcopy": 0.9835756669700637,
+  "ratio_mcraw": 1.2513141813504236
+ },
+ "wp0.7": {
+  "eff_data_SR": 0.035624295474964617,
+  "err": 0.0014268535736504885,
+  "chi2ndf_post": 0.5960639768750751,
+  "N_post_SR_fit": 5863.570300589936,
+  "N_post_SR_raw": 6009,
+  "eff_sbcopy": 0.034117095254603665,
+  "eff_mcraw_SR": 0.04256505786696261,
+  "eff_salad_hgb_SR": 0.03532627505368188,
+  "eff_salad_sk_mlp_SR": 0.03338054696041384,
+  "ratio_salad_hgb": 0.9916343490500136,
+  "ratio_salad_sk_mlp": 0.9370163399827066,
+  "ratio_sbcopy": 0.9576917887002101,
+  "ratio_mcraw": 1.194832271051527
+ },
+ "wp0.5": {
+  "eff_data_SR": 0.008812538714975964,
+  "err": 0.0006686399991259083,
+  "chi2ndf_post": 1.2541151017703822,
+  "N_post_SR_fit": 1450.49718437929,
+  "N_post_SR_raw": 1403,
+  "eff_sbcopy": 0.007742452977683518,
+  "eff_mcraw_SR": 0.00833465449686318,
+  "eff_salad_hgb_SR": 0.007392198786008727,
+  "eff_salad_sk_mlp_SR": 0.006868781044942604,
+  "ratio_salad_hgb": 0.8388273827888527,
+  "ratio_salad_sk_mlp": 0.7794327227487634,
+  "ratio_sbcopy": 0.8785723646837489,
+  "ratio_mcraw": 0.9457722418511851
+ },
+ "salad_diag": {
+  "hgb": {
+   "val_auc_SB": 0.6508523597535452,
+   "neff_over_N_SR": 0.621813759380215,
+   "c2st_band": 0.507645553221515
+  },
+  "sk_mlp": {
+   "val_auc_SB": 0.6479538008874222,
+   "neff_over_N_SR": 0.5445998853203854,
+   "c2st_band": 0.514638053777969
+  }
+ }
+}

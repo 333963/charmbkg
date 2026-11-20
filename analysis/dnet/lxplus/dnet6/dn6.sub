@@ -1,0 +1,16 @@
+# Węzeł DAG DNET etap 6 — CPU (VARS node, args, cpus, mem, disk, flavour, soft, penv z dn6.dag).
+Q          = /afs/cern.ch/user/k/klyczak/private/charm_q/Q_lxplus
+universe   = vanilla
+executable = /bin/bash
+arguments  = $(Q)/dnet6/dn6_job.sh $(args)
+output     = $(Q)/logs/dnet6/dn6_$(node).$(ClusterId).out
+error      = $(Q)/logs/dnet6/dn6_$(node).$(ClusterId).err
+log        = $(Q)/logs/dnet6/dn6.log
+request_cpus   = $(cpus)
+request_memory = $(mem)
+request_disk   = $(disk)
++JobFlavour    = "$(flavour)"
+should_transfer_files = NO
+getenv     = False
+environment = "$(penv) DN6_SOFTNODE=$(soft)"
+queue

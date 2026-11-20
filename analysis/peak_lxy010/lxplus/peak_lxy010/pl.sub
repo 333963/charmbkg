@@ -1,0 +1,17 @@
+# Węzeł DAG PEAK_LXY010 (VARS step, cpus, mem, flavour z pl.dag). step = próbka (fd_nd | mb_nd | data_428770 | data_427929) albo finish.
+Q          = /afs/cern.ch/user/k/klyczak/private/charm_q/Q_lxplus
+universe   = vanilla
+executable = /bin/bash
+arguments  = $(Q)/peak_lxy010/pl_job.sh $(step)
+output     = $(Q)/logs/peaklxy/pl_$(step).$(ClusterId).out
+error      = $(Q)/logs/peaklxy/pl_$(step).$(ClusterId).err
+log        = $(Q)/logs/peaklxy/pl.log
+request_cpus   = $(cpus)
+request_memory = $(mem)
+request_disk   = 6GB
++JobFlavour    = "$(flavour)"
+should_transfer_files = NO
+getenv     = False
+# getenv=False → zmienne biegu (PL_OUT, H5V20, SAMPLES…) przekazywane jawnie z pl.dag
+environment = "$(penv)"
+queue

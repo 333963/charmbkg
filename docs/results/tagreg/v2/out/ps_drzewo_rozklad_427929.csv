@@ -1,0 +1,76 @@
+lancuch,ps_calk,L1,ps_L1,czynnik_HLT,n_pass_GRL
+HLT_2j10_20detaAA_L1AFP_A_OR_C,[np.float64(1.0)],L1_AFP_A_OR_C,[np.float64(1.0)],[np.float64(1.0)],389
+HLT_2j20_20detaAA_L1MBTS_2,[np.float64(1.0)],L1_MBTS_2,[np.float64(1.0)],[np.float64(1.0)],76849
+HLT_2j20_20detaAA_L1RD0_FILLED,[np.float64(478.863)],L1_RD0_FILLED,[np.float64(143.659)],[np.float64(3.333)],160
+HLT_2j20_L1RD0_FILLED,[np.float64(478.863)],L1_RD0_FILLED,[np.float64(143.659)],[np.float64(3.333)],378
+HLT_j10f_L1MBTS_2,[np.float64(1.0)],L1_MBTS_2,[np.float64(1.0)],[np.float64(1.0)],336859
+HLT_j10f_L1RD0_FILLED,[np.float64(478.863)],L1_RD0_FILLED,[np.float64(143.659)],[np.float64(3.333)],684
+HLT_j20_L1AFP_A_OR_C,[np.float64(1.0)],L1_AFP_A_OR_C,[np.float64(1.0)],[np.float64(1.0)],3473
+HLT_j20_L1AFP_A_OR_C_J12,[np.float64(1.0)],L1_AFP_A_OR_C_J12,[np.float64(1.0)],[np.float64(1.0)],267
+HLT_j20_L1J12,[np.float64(1.0)],L1_J12,[np.float64(1.0)],[np.float64(1.0)],61070
+HLT_j20_L1MBTS_2,[np.float64(1.0)],L1_MBTS_2,[np.float64(1.0)],[np.float64(1.0)],743391
+HLT_j20_L1RD0_FILLED,[np.float64(478.863)],L1_RD0_FILLED,[np.float64(143.659)],[np.float64(3.333)],1551
+HLT_j20f_L1AFP_A_OR_C,[np.float64(1.0)],L1_AFP_A_OR_C,[np.float64(1.0)],[np.float64(1.0)],434
+HLT_mb_mbts_L1MBTS_1,[np.float64(1.0)],L1_MBTS_1,[np.float64(1.0)],[np.float64(1.0)],23844825
+HLT_mb_mbts_L1MBTS_1_1,[np.float64(1.0)],L1_MBTS_1_1,[np.float64(1.0)],[np.float64(1.0)],21553849
+HLT_mb_mbts_L1MBTS_2,[np.float64(1.0)],L1_MBTS_2,[np.float64(1.0)],[np.float64(1.0)],23627842
+HLT_mb_mbts_L1RD0_EMPTY,[np.float64(1398101.25)],L1_RD0_EMPTY,[np.float64(1398101.25)],[np.float64(1.0)],0
+HLT_mb_mbts_L1RD0_FILLED,[np.float64(478.863)],L1_RD0_FILLED,[np.float64(143.659)],[np.float64(3.333)],49906
+HLT_mb_mbts_L1RD0_UNPAIRED_ISO,[np.float64(8976.573)],L1_RD0_UNPAIRED_ISO,[np.float64(8976.573)],[np.float64(1.0)],2
+HLT_mb_mbts_all_L1MBTS_2_EMPTY,[np.float64(1.0)],L1_MBTS_2_EMPTY,[np.float64(1.0)],[np.float64(1.0)],487
+HLT_mb_mbts_all_L1MBTS_A,[np.float64(1.0)],L1_MBTS_A,[np.float64(1.0)],[np.float64(1.0)],22647052
+HLT_mb_mbts_all_L1MBTS_C,[np.float64(1.0)],L1_MBTS_C,[np.float64(1.0)],[np.float64(1.0)],22751622
+HLT_mb_sptrk_L1MBTS_1,[np.float64(1.0)],L1_MBTS_1,[np.float64(1.0)],[np.float64(1.0)],23849438
+HLT_mb_sptrk_L1MBTS_2,[np.float64(1.0)],L1_MBTS_2,[np.float64(1.0)],[np.float64(1.0)],23627424
+HLT_mb_sptrk_L1RD0_FILLED,[np.float64(478.863)],L1_RD0_FILLED,[np.float64(143.659)],[np.float64(3.333)],50084
+HLT_mb_sptrk_pt2_L1AFP_A_AND_C,[np.float64(1.0)],L1_AFP_A_AND_C,[np.float64(1.0)],[np.float64(1.0)],403
+HLT_mb_sptrk_pt2_L1AFP_A_OR_C,[np.float64(1.0)],L1_AFP_A_OR_C,[np.float64(1.0)],[np.float64(1.0)],90472
+HLT_mb_sptrk_pt2_L1MBTS_2,[np.float64(1.0)],L1_MBTS_2,[np.float64(1.0)],[np.float64(1.0)],8870892
+HLT_mb_sptrk_pt2_L1RD0_FILLED,[np.float64(478.863)],L1_RD0_FILLED,[np.float64(143.659)],[np.float64(3.333)],18500
+HLT_mb_sptrk_pt4_L1AFP_A_AND_C,[np.float64(1.0)],L1_AFP_A_AND_C,[np.float64(1.0)],[np.float64(1.0)],40
+HLT_mb_sptrk_pt4_L1AFP_A_OR_C,[np.float64(1.0)],L1_AFP_A_OR_C,[np.float64(1.0)],[np.float64(1.0)],10169
+HLT_mb_sptrk_pt4_L1MBTS_1,[np.float64(1.0)],L1_MBTS_1,[np.float64(1.0)],[np.float64(1.0)],1672042
+HLT_mb_sptrk_pt4_L1MBTS_2,[np.float64(1.0)],L1_MBTS_2,[np.float64(1.0)],[np.float64(1.0)],1671873
+HLT_mb_sptrk_pt4_L1RD0_FILLED,[np.float64(478.863)],L1_RD0_FILLED,[np.float64(143.659)],[np.float64(3.333)],3383
+HLT_mb_sptrk_pt6_L1AFP_A_AND_C,[np.float64(1.0)],L1_AFP_A_AND_C,[np.float64(1.0)],[np.float64(1.0)],9
+HLT_mb_sptrk_pt6_L1AFP_A_OR_C,[np.float64(1.0)],L1_AFP_A_OR_C,[np.float64(1.0)],[np.float64(1.0)],2291
+HLT_mb_sptrk_pt6_L1MBTS_1,[np.float64(1.0)],L1_MBTS_1,[np.float64(1.0)],[np.float64(1.0)],447529
+HLT_mb_sptrk_pt6_L1MBTS_2,[np.float64(1.0)],L1_MBTS_2,[np.float64(1.0)],[np.float64(1.0)],447499
+HLT_mb_sptrk_pt6_L1RD0_FILLED,[np.float64(478.863)],L1_RD0_FILLED,[np.float64(143.659)],[np.float64(3.333)],941
+HLT_mb_sptrk_pt8_L1AFP_A_AND_C,[np.float64(1.0)],L1_AFP_A_AND_C,[np.float64(1.0)],[np.float64(1.0)],5
+HLT_mb_sptrk_pt8_L1AFP_A_OR_C,[np.float64(1.0)],L1_AFP_A_OR_C,[np.float64(1.0)],[np.float64(1.0)],846
+HLT_mb_sptrk_pt8_L1MBTS_1,[np.float64(1.0)],L1_MBTS_1,[np.float64(1.0)],[np.float64(1.0)],184419
+HLT_mb_sptrk_pt8_L1MBTS_2,[np.float64(1.0)],L1_MBTS_2,[np.float64(1.0)],[np.float64(1.0)],184407
+HLT_mb_sptrk_pt8_L1RD0_FILLED,[np.float64(478.863)],L1_RD0_FILLED,[np.float64(143.659)],[np.float64(3.333)],394
+HLT_mb_sptrk_vetombts2in_L1RD0_FILLED,[np.float64(478.863)],L1_RD0_FILLED,[np.float64(143.659)],[np.float64(3.333)],0
+HLT_noalg_L1AFP_A_AND_C,[np.float64(1.0)],L1_AFP_A_AND_C,[np.float64(1.0)],[np.float64(1.0)],4390
+HLT_noalg_L1AFP_A_OR_C,[np.float64(1.0)],L1_AFP_A_OR_C,[np.float64(1.0)],[np.float64(1.0)],573560
+HLT_noalg_L1AFP_A_OR_C_EMPTY,[np.float64(1.0)],L1_AFP_A_OR_C_EMPTY,[np.float64(1.0)],[np.float64(1.0)],0
+HLT_noalg_L1AFP_A_OR_C_FIRSTEMPTY,[np.float64(1.0)],L1_AFP_A_OR_C_FIRSTEMPTY,[np.float64(1.0)],[np.float64(1.0)],0
+HLT_noalg_L1AFP_A_OR_C_J12,[np.float64(1.0)],L1_AFP_A_OR_C_J12,[np.float64(1.0)],[np.float64(1.0)],267
+HLT_noalg_L1AFP_A_OR_C_UNPAIRED_ISO,[np.float64(1.0)],L1_AFP_A_OR_C_UNPAIRED_ISO,[np.float64(1.0)],[np.float64(1.0)],13
+HLT_noalg_L1AFP_A_OR_C_UNPAIRED_NONISO,[np.float64(1.0)],L1_AFP_A_OR_C_UNPAIRED_NONISO,[np.float64(1.0)],[np.float64(1.0)],0
+HLT_noalg_L1AFP_FSA_BGRP12,[np.float64(0.0)],L1_AFP_FSA_BGRP12,[np.float64(50.0)],[np.float64(0.0)],0
+HLT_noalg_L1AFP_FSC_BGRP12,[np.float64(0.0)],L1_AFP_FSC_BGRP12,[np.float64(50.0)],[np.float64(0.0)],0
+HLT_noalg_L1AFP_NSA_BGRP12,[np.float64(0.0)],L1_AFP_NSA_BGRP12,[np.float64(50.0)],[np.float64(0.0)],0
+HLT_noalg_L1AFP_NSC_BGRP12,[np.float64(0.0)],L1_AFP_NSC_BGRP12,[np.float64(50.0)],[np.float64(0.0)],0
+HLT_noalg_L1EM22VHI,[np.float64(1.0)],(brak w drzewie),,,886
+HLT_noalg_L1EM3,[np.float64(0.0)],L1_EM3,[np.float64(52.102)],[np.float64(0.0)],0
+HLT_noalg_L1EM7,[np.float64(1.0)],L1_EM7,[np.float64(1.0)],[np.float64(1.0)],70526
+HLT_noalg_L1J100,[np.float64(1.0)],(brak w drzewie),,,111
+HLT_noalg_L1J12,[np.float64(1.0)],L1_J12,[np.float64(1.0)],[np.float64(1.0)],61082
+HLT_noalg_L1J75,[np.float64(1.0)],(brak w drzewie),,,305
+HLT_noalg_L1J85,[np.float64(1.0)],(brak w drzewie),,,204
+HLT_noalg_L1MBTS_2,[np.float64(1.0)],L1_MBTS_2,[np.float64(1.0)],[np.float64(1.0)],23628497
+HLT_noalg_L1MBTS_2_EMPTY,[np.float64(0.0)],L1_MBTS_2_EMPTY,[np.float64(1.0)],[np.float64(0.0)],0
+HLT_noalg_L1MBTS_2_UNPAIRED_ISO,[np.float64(0.0)],L1_MBTS_2_UNPAIRED_ISO,[np.float64(1.0)],[np.float64(0.0)],0
+HLT_noalg_L1MBTS_A,[np.float64(1.0)],L1_MBTS_A,[np.float64(1.0)],[np.float64(1.0)],22652163
+HLT_noalg_L1MBTS_C,[np.float64(1.0)],L1_MBTS_C,[np.float64(1.0)],[np.float64(1.0)],22752288
+HLT_noalg_L1MU3V,[np.float64(0.0)],L1_MU3V,[np.float64(0.0)],,0
+HLT_noalg_L1MU5VF_AFP_A_OR_C,[np.float64(1.0)],(brak w drzewie),,,27
+HLT_noalg_L1RD0_FILLED,[np.float64(0.0)],L1_RD0_FILLED,[np.float64(143.659)],[np.float64(0.0)],0
+HLT_noalg_L1TAU60,[np.float64(1.0)],(brak w drzewie),,,206
+HLT_noalg_mb_L1MBTS_1,[np.float64(1.0)],L1_MBTS_1,[np.float64(1.0)],[np.float64(1.0)],23850567
+HLT_noalg_mb_L1MBTS_1_1,[np.float64(1.0)],L1_MBTS_1_1,[np.float64(1.0)],[np.float64(1.0)],21553884
+HLT_noalg_mb_L1MBTS_2,[np.float64(1.0)],L1_MBTS_2,[np.float64(1.0)],[np.float64(1.0)],23628497
+HLT_noalg_mb_L1RD0_FILLED,[np.float64(478.863)],L1_RD0_FILLED,[np.float64(143.659)],[np.float64(3.333)],50084

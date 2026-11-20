@@ -1,0 +1,18 @@
+# Pojedynczy job: powtórka węzła anar etapu 6 po naprawie dn6_job.sh (20.11.2026). Poza DAG i poza ORCH; twardy (DN6_SOFTNODE=0).
+# Wysyłka (czyste środowisko):  condor_submit -append "penv=$(cat dn6.penv)" dn6_anar_fix.sub
+Q          = /afs/cern.ch/user/k/klyczak/private/charm_q/Q_lxplus
+universe   = vanilla
+executable = /bin/bash
+arguments  = $(Q)/dnet6/dn6_job.sh anar
+output     = $(Q)/logs/dnet6/dn6_anarfix.$(ClusterId).out
+error      = $(Q)/logs/dnet6/dn6_anarfix.$(ClusterId).err
+log        = $(Q)/logs/dnet6/dn6_anarfix.log
+request_cpus   = 4
+request_memory = 16GB
+request_disk   = 8GB
++JobFlavour    = "workday"
++JobBatchName  = "charm_dnet6_anarfix"
+should_transfer_files = NO
+getenv     = False
+environment = "$(penv) DN6_SOFTNODE=0"
+queue

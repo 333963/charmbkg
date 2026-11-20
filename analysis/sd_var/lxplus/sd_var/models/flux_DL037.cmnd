@@ -1,0 +1,3 @@
+! ε = 0,037: ATLAS A3 ALT (Athena, Pythia8_A3_ALT_NNPDF23LO_Common.py)
+SigmaDiffractive:PomFlux = 4
+SigmaDiffractive:PomFluxEpsilon = 0.037

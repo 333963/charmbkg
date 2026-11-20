@@ -1,0 +1,16 @@
+# Węzeł DAG sd_var (VARS step, model, seed, nev, cm, flavour, penv z sdvar.dag). Tylko CPU.
+Q          = /afs/cern.ch/user/k/klyczak/private/charm_q/Q_lxplus
+universe   = vanilla
+executable = /bin/bash
+arguments  = $(Q)/sd_var/sd_job.sh $(step) $(model) $(seed) $(nev) $(cm)
+output     = $(Q)/logs/sd_var/$(step)_$(model)_$(seed).$(ClusterId).out
+error      = $(Q)/logs/sd_var/$(step)_$(model)_$(seed).$(ClusterId).err
+log        = $(Q)/logs/sd_var/sdvar.log
+request_cpus   = 1
+request_memory = 2GB
+request_disk   = 2GB
++JobFlavour    = "$(flavour)"
+should_transfer_files = NO
+getenv     = False
+environment = "$(penv)"
+queue

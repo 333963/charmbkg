@@ -1,0 +1,3 @@
+! ε = 0,058: wartość centralna pomiaru ATLAS z przerw w rapidity przy 7 TeV (arXiv:1201.2808; liczba z pamięci — sprawdzić przed cytowaniem)
+SigmaDiffractive:PomFlux = 4
+SigmaDiffractive:PomFluxEpsilon = 0.058

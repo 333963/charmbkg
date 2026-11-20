@@ -1,0 +1,7 @@
+! base_Monash.cmnd — Monash 2013 (domyślny Pythii 8.3), PomFlux = 1 (SaS)
+Beams:idA = 2212
+Beams:idB = 2212
+Beams:eCM = 13600.
+ParticleDecays:limitTau0 = on
+ParticleDecays:tau0Max = 10.
+SigmaTotal:zeroAXB = off

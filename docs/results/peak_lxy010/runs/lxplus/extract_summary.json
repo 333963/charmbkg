@@ -1,0 +1,120 @@
+{
+ "samples": {
+  "data_427929": {
+   "n_rows_out": 1519972,
+   "bytes": 304918276,
+   "frac": 1.0,
+   "score_mode": "model",
+   "hypo_swap_counts": {
+    "-1": 1519972
+   },
+   "v12": true,
+   "rows_total": 38276950,
+   "dstar": {
+    "n_dstar_rows": 4065226,
+    "n_dstar_ok": 1306416,
+    "n_dstar_k_consistent": 1306416,
+    "n_dstar_q0_known": 1306416,
+    "n_dstar_dm_signal": 166208,
+    "n_rows_tagged": 1519972,
+    "n_rows_conflict": 40542,
+    "n_rows_tag_ok": 1286125,
+    "n_rows_tag_refl": 233847,
+    "n_rows_tag_dm_signal": 198922
+   },
+   "Lxy_min": 0.10000000894069672,
+   "frac_Lxy_lt_025": 0.5144950038553342,
+   "pt_min": 3.000000238418579,
+   "n_score_nan": 0
+  },
+  "data_428770": {
+   "n_rows_out": 4428035,
+   "bytes": 897291137,
+   "frac": 1.0,
+   "score_mode": "model",
+   "hypo_swap_counts": {
+    "-1": 4428035
+   },
+   "v12": true,
+   "rows_total": 108632484,
+   "dstar": {
+    "n_dstar_rows": 12240228,
+    "n_dstar_ok": 3907335,
+    "n_dstar_k_consistent": 3907335,
+    "n_dstar_q0_known": 3907335,
+    "n_dstar_dm_signal": 492977,
+    "n_rows_tagged": 4428035,
+    "n_rows_conflict": 104107,
+    "n_rows_tag_ok": 3854005,
+    "n_rows_tag_refl": 574030,
+    "n_rows_tag_dm_signal": 571853
+   },
+   "Lxy_min": 0.10000007599592209,
+   "frac_Lxy_lt_025": 0.5009090939886428,
+   "pt_min": 3.000000476837158,
+   "n_score_nan": 0
+  },
+  "fd_nd": {
+   "n_rows_out": 555118,
+   "bytes": 111292185,
+   "frac": 1.0,
+   "score_mode": "model",
+   "hypo_swap_counts": {
+    "-1": 272224,
+    "0": 170717,
+    "1": 112177
+   },
+   "v12": true,
+   "rows_total": 10620717,
+   "dstar": {
+    "n_dstar_rows": 1144927,
+    "n_dstar_ok": 442648,
+    "n_dstar_k_consistent": 442648,
+    "n_dstar_q0_known": 442648,
+    "n_dstar_dm_signal": 130149,
+    "n_rows_tagged": 555118,
+    "n_rows_conflict": 16712,
+    "n_rows_tag_ok": 434157,
+    "n_rows_tag_refl": 120961,
+    "n_rows_tag_dm_signal": 182577
+   },
+   "Lxy_min": 0.10000074654817581,
+   "frac_Lxy_lt_025": 0.44813715282156225,
+   "pt_min": 3.000016212463379,
+   "n_score_nan": 0
+  },
+  "mb_nd": {
+   "n_rows_out": 844712,
+   "bytes": 170604516,
+   "frac": 1.0,
+   "score_mode": "model",
+   "hypo_swap_counts": {
+    "-1": 655706,
+    "0": 91902,
+    "1": 97104
+   },
+   "v12": true,
+   "rows_total": 22253520,
+   "dstar": {
+    "n_dstar_rows": 2233710,
+    "n_dstar_ok": 717951,
+    "n_dstar_k_consistent": 717951,
+    "n_dstar_q0_known": 717951,
+    "n_dstar_dm_signal": 91728,
+    "n_rows_tagged": 844712,
+    "n_rows_conflict": 18990,
+    "n_rows_tag_ok": 708439,
+    "n_rows_tag_refl": 136273,
+    "n_rows_tag_dm_signal": 110670
+   },
+   "Lxy_min": 0.10000031441450119,
+   "frac_Lxy_lt_025": 0.5475238897991268,
+   "pt_min": 3.000002145767212,
+   "n_score_nan": 0
+  }
+ },
+ "total_bytes": 1484106114,
+ "input": "/eos/user/k/klyczak/charm_h5_v20/parts",
+ "score_mode": "model",
+ "extra": "--dstar-only"
+}

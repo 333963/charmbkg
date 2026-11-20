@@ -1,0 +1,16 @@
+# Węzeł DAG AFP_EXT (VARS step, part, cpus, mem, disk, flavour, penv z afp.dag).
+Q          = /afs/cern.ch/user/k/klyczak/private/charm_q/Q_lxplus
+universe   = vanilla
+executable = /bin/bash
+arguments  = $(Q)/afp_ext/afp_job.sh $(step) $(part)
+output     = $(Q)/logs/afp_ext/afp_$(step)_$(part).$(ClusterId).out
+error      = $(Q)/logs/afp_ext/afp_$(step)_$(part).$(ClusterId).err
+log        = $(Q)/logs/afp_ext/afp.log
+request_cpus   = $(cpus)
+request_memory = $(mem)
+request_disk   = $(disk)
++JobFlavour    = "$(flavour)"
+should_transfer_files = NO
+getenv     = False
+environment = "$(penv)"
+queue

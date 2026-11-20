@@ -1,0 +1,117 @@
+{
+ "samples": {
+  "data_428770": {
+   "n_files": 97,
+   "bytes": 920469,
+   "counts": {
+    "rows": 108632484,
+    "D0_sel": 19396377,
+    "Dplus_sel": 56302692,
+    "Dstar_rows": 2801504,
+    "ds_right": 1455762,
+    "ds_twin": 73327
+   },
+   "entries": {
+    "d0_m": 39029652,
+    "d0_imp": 22418867,
+    "d0_ct": 22418867,
+    "ds_right": 2928623,
+    "ds_twin": 147574,
+    "dp_m": 113251217,
+    "dp_imp": 42616728,
+    "dp_ct": 42616728,
+    "dp_dm": 7869369,
+    "dp_mkk": 26190185,
+    "dp_kkpi": 1297599,
+    "dp_mphi": 6523999,
+    "dp_pkpi": 58760070,
+    "dp_mds": 1713286
+   }
+  },
+  "data_427929": {
+   "n_files": 458,
+   "bytes": 280671,
+   "counts": {
+    "rows": 38276950,
+    "D0_sel": 5279290,
+    "Dplus_sel": 14807700,
+    "Dstar_rows": 701904,
+    "ds_right": 344417,
+    "ds_twin": 22488
+   },
+   "entries": {
+    "d0_m": 10558448,
+    "d0_imp": 6073987,
+    "d0_ct": 6073987,
+    "ds_right": 688818,
+    "ds_twin": 44976,
+    "dp_m": 29615204,
+    "dp_imp": 11178052,
+    "dp_ct": 11178052,
+    "dp_dm": 1961793,
+    "dp_mkk": 6839945,
+    "dp_kkpi": 326398,
+    "dp_mphi": 1707355,
+    "dp_pkpi": 15579974,
+    "dp_mds": 427022
+   }
+  },
+  "mb_nd": {
+   "n_files": 78,
+   "bytes": 628450,
+   "counts": {
+    "rows": 22253520,
+    "D0_sel": 4110293,
+    "Dplus_sel": 10811220,
+    "Dstar_rows": 519030,
+    "ds_right": 246365,
+    "ds_twin": 16377
+   },
+   "entries": {
+    "d0_m": 4110293,
+    "d0_imp": 2366229,
+    "d0_ct": 2366229,
+    "ds_right": 246365,
+    "ds_twin": 16377,
+    "dp_m": 10811220,
+    "dp_imp": 4127266,
+    "dp_ct": 4127266,
+    "dp_dm": 648874,
+    "dp_mkk": 2378415,
+    "dp_kkpi": 129992,
+    "dp_mphi": 589731,
+    "dp_pkpi": 5811369,
+    "dp_mds": 139534
+   }
+  },
+  "fd_nd": {
+   "n_files": 24,
+   "bytes": 739355,
+   "counts": {
+    "rows": 10620717,
+    "D0_sel": 2066684,
+    "Dplus_sel": 5284931,
+    "Dstar_rows": 348264,
+    "ds_right": 197817,
+    "ds_twin": 48722
+   },
+   "entries": {
+    "d0_m": 2066684,
+    "d0_imp": 1251513,
+    "d0_ct": 1251513,
+    "ds_right": 197817,
+    "ds_twin": 48722,
+    "dp_m": 5284931,
+    "dp_imp": 2031986,
+    "dp_ct": 2031986,
+    "dp_dm": 376791,
+    "dp_mkk": 1059038,
+    "dp_kkpi": 55916,
+    "dp_mphi": 259438,
+    "dp_pkpi": 2835671,
+    "dp_mds": 103612
+   }
+  }
+ },
+ "bytes_total": 2568945
+}

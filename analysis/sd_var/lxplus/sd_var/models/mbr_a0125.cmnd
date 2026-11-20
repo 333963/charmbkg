@@ -1,0 +1,2 @@
+! MBR z α′ = 0,125 GeV⁻² (domyślne 0,25; wariant używany w porównaniach CMS — z pamięci, sprawdzić przed cytowaniem)
+SigmaDiffractive:MBRalpha = 0.125

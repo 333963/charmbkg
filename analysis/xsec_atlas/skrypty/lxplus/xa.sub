@@ -1,0 +1,15 @@
+# Wezel DAG XSEC_atlas — 1 rdzen, <= 4 GB.
+Q          = /afs/cern.ch/user/k/klyczak/private/charm_q/Q_lxplus
+universe   = vanilla
+executable = /bin/bash
+arguments  = $(Q)/xsatlas/xa_job.sh $(args)
+output     = $(Q)/logs/xsatlas/xa_$(node).$(ClusterId).out
+error      = $(Q)/logs/xsatlas/xa_$(node).$(ClusterId).err
+log        = $(Q)/logs/xsatlas/xa.log
+request_cpus   = 1
+request_memory = $(mem)
+request_disk   = 3GB
++JobFlavour    = "$(flavour)"
+should_transfer_files = NO
+getenv     = False
+queue

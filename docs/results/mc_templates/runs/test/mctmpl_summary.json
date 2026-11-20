@@ -1,0 +1,117 @@
+{
+ "samples": {
+  "data_428770": {
+   "n_files": 1,
+   "bytes": 269219,
+   "counts": {
+    "rows": 1370477,
+    "D0_sel": 244953,
+    "Dplus_sel": 709980,
+    "Dstar_rows": 35090,
+    "ds_right": 18355,
+    "ds_twin": 980
+   },
+   "entries": {
+    "d0_m": 492919,
+    "d0_imp": 283589,
+    "d0_ct": 283589,
+    "ds_right": 36890,
+    "ds_twin": 1966,
+    "dp_m": 1428564,
+    "dp_imp": 537479,
+    "dp_ct": 537479,
+    "dp_dm": 99249,
+    "dp_mkk": 330887,
+    "dp_kkpi": 16444,
+    "dp_mphi": 82598,
+    "dp_pkpi": 741756,
+    "dp_mds": 21887
+   }
+  },
+  "data_427929": {
+   "n_files": 4,
+   "bytes": 74512,
+   "counts": {
+    "rows": 220900,
+    "D0_sel": 40020,
+    "Dplus_sel": 111902,
+    "Dstar_rows": 5359,
+    "ds_right": 2675,
+    "ds_twin": 163
+   },
+   "entries": {
+    "d0_m": 80039,
+    "d0_imp": 46242,
+    "d0_ct": 46242,
+    "ds_right": 5349,
+    "ds_twin": 326,
+    "dp_m": 223801,
+    "dp_imp": 84163,
+    "dp_ct": 84163,
+    "dp_dm": 14793,
+    "dp_mkk": 51443,
+    "dp_kkpi": 2308,
+    "dp_mphi": 12548,
+    "dp_pkpi": 117127,
+    "dp_mds": 3248
+   }
+  },
+  "mb_nd": {
+   "n_files": 2,
+   "bytes": 161265,
+   "counts": {
+    "rows": 569181,
+    "D0_sel": 104712,
+    "Dplus_sel": 277646,
+    "Dstar_rows": 13457,
+    "ds_right": 6378,
+    "ds_twin": 424
+   },
+   "entries": {
+    "d0_m": 104712,
+    "d0_imp": 60320,
+    "d0_ct": 60320,
+    "ds_right": 6378,
+    "ds_twin": 424,
+    "dp_m": 277646,
+    "dp_imp": 105916,
+    "dp_ct": 105916,
+    "dp_dm": 16497,
+    "dp_mkk": 61041,
+    "dp_kkpi": 3388,
+    "dp_mphi": 15103,
+    "dp_pkpi": 149454,
+    "dp_mds": 3572
+   }
+  },
+  "fd_nd": {
+   "n_files": 1,
+   "bytes": 244399,
+   "counts": {
+    "rows": 538869,
+    "D0_sel": 104783,
+    "Dplus_sel": 268504,
+    "Dstar_rows": 17451,
+    "ds_right": 9940,
+    "ds_twin": 2431
+   },
+   "entries": {
+    "d0_m": 104783,
+    "d0_imp": 63222,
+    "d0_ct": 63222,
+    "ds_right": 9940,
+    "ds_twin": 2431,
+    "dp_m": 268504,
+    "dp_imp": 103174,
+    "dp_ct": 103174,
+    "dp_dm": 19053,
+    "dp_mkk": 53564,
+    "dp_kkpi": 2792,
+    "dp_mphi": 13117,
+    "dp_pkpi": 144190,
+    "dp_mds": 5190
+   }
+  }
+ },
+ "bytes_total": 749395
+}

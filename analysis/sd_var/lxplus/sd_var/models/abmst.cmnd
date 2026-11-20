@@ -1,0 +1,3 @@
+! ABMST (Appleby i in. 2016) z rozszerzeniami Pythii: σ_tot/el i dyfrakcja; domyślne ABMSTmodeSD = 1, dampenGap = on, useBMin = on
+SigmaTotal:mode = 3
+SigmaDiffractive:mode = 3

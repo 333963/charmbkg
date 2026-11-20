@@ -1,0 +1,8 @@
+! own.cmnd — 17.11.2026: w Pythii 8.3 SigmaDiffractive:PomFlux działa na miękką dyfrakcję TYLKO przy SigmaDiffractive:mode = 0 (klasa SigmaTotOwn);
+! przy domyślnym mode = 1 (SaS) kształt (ξ, t) jest zawsze SaS. Tu: mode = 0 z σ ustawionymi na wartości SaS przy 13,6 TeV (z biegu dif_A3),
+! żeby zmieniał się tylko kształt, a nie normalizacja.
+SigmaDiffractive:mode = 0
+SigmaTotal:sigmaXB = 6.432
+SigmaTotal:sigmaAX = 6.432
+SigmaTotal:sigmaXX = 8.850
+SigmaTotal:sigmaAXB = 1.284

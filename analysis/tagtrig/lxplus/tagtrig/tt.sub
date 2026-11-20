@@ -1,0 +1,20 @@
+# Węzeł DAG TAGTRIG (VARS step, part, cpus, mem, disk, flavour, penv z tt.dag). step = data_<run> (bits) | lumi | finish.
+Q          = /afs/cern.ch/user/k/klyczak/private/charm_q/Q_lxplus
+universe   = vanilla
+executable = /bin/bash
+arguments  = $(Q)/tagtrig/tt_job.sh $(step) $(part)
+output     = $(Q)/logs/tagtrig/tt_$(step)_$(part).$(ClusterId).out
+error      = $(Q)/logs/tagtrig/tt_$(step)_$(part).$(ClusterId).err
+log        = $(Q)/logs/tagtrig/tt.log
+request_cpus   = $(cpus)
+request_memory = $(mem)
+request_disk   = $(disk)
++JobFlavour    = "$(flavour)"
+batch_name     = charm_tagtrig
+should_transfer_files = NO
+getenv     = False
+# getenv=False → zmienne biegu przekazywane jawnie z tt.dag
+environment = "$(penv)"
+# zadanie wstrzymane (held) > 30 min → usunięte (węzeł pada: bits ma RETRY, lumi ma POST /bin/true) — DAG nie wisi
+periodic_remove = (JobStatus == 5) && ((time() - EnteredCurrentStatus) > 1800)
+queue

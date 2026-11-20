@@ -1,0 +1,54 @@
+{
+ "D0": {
+  "pT3-5": {
+   "dm_ddelta_MeV_per_TeVinv": -0.0942817369836107,
+   "dm_dalpha_MeV_per_permille": 1.5169078821594328
+  },
+  "pT5-8": {
+   "dm_ddelta_MeV_per_TeVinv": -0.08170294710946809,
+   "dm_dalpha_MeV_per_permille": 1.5184473553026752
+  },
+  "pT8-30": {
+   "dm_ddelta_MeV_per_TeVinv": 0.10601975360607113,
+   "dm_dalpha_MeV_per_permille": 1.5139171279838277
+  },
+  "pT3-30": {
+   "dm_ddelta_MeV_per_TeVinv": -0.06453769861271566,
+   "dm_dalpha_MeV_per_permille": 1.5169838281621912
+  },
+  "abseta<1": {
+   "dm_ddelta_MeV_per_TeVinv": -0.07579131393431372,
+   "dm_dalpha_MeV_per_permille": 1.5174466367110102
+  },
+  "abseta>1": {
+   "dm_ddelta_MeV_per_TeVinv": -0.052424536996444615,
+   "dm_dalpha_MeV_per_permille": 1.5164856704956073
+  }
+ },
+ "Dplus": {
+  "pT3-5": {
+   "dm_ddelta_MeV_per_TeVinv": -0.9269206608338196,
+   "dm_dalpha_MeV_per_permille": 1.3592919486338155
+  },
+  "pT5-8": {
+   "dm_ddelta_MeV_per_TeVinv": -1.368755928507773,
+   "dm_dalpha_MeV_per_permille": 1.3489333336622773
+  },
+  "pT8-30": {
+   "dm_ddelta_MeV_per_TeVinv": -2.5003346296875293,
+   "dm_dalpha_MeV_per_permille": 1.3285019660840167
+  },
+  "pT3-30": {
+   "dm_ddelta_MeV_per_TeVinv": -1.2945019787582381,
+   "dm_dalpha_MeV_per_permille": 1.351547701375542
+  },
+  "abseta<1": {
+   "dm_ddelta_MeV_per_TeVinv": -1.2796894334084659,
+   "dm_dalpha_MeV_per_permille": 1.356093958575272
+  },
+  "abseta>1": {
+   "dm_ddelta_MeV_per_TeVinv": -1.312931858336133,
+   "dm_dalpha_MeV_per_permille": 1.3458912142058708
+  }
+ }
+}

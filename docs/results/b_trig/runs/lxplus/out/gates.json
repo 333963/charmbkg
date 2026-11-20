@@ -1,0 +1,42 @@
+[
+ {
+  "gate": "G1 złączenie",
+  "status": "ZDANE",
+  "detail": "duplikaty (run, event) {'data_427929': 0, 'data_428770': 0}; bity z ['npz', 'npz']; nieznalezione 0.0000%"
+ },
+ {
+  "gate": "G2 domknięcie z nominałem (±0,02)",
+  "status": "ZDANE",
+  "detail": "5-8: SF95(all) 0.84 ± 0.10 vs nominał 0.83 ± 0.10 (Δ +0.009), N_sig 1397 ± 264; 8-30: SF95(all) 1.01 ± 0.04 vs nominał 1.00 ± 0.04 (Δ +0.006), N_sig 2219 ± 125. N_sig ±2 % vs EV — porównać ręcznie z `EV_dstar/EV_pdgid.md` (nie w JSON)."
+ },
+ {
+  "gate": "G3 ułamki klas / PS",
+  "status": "ZDANE",
+  "detail": "428770 pary: all 1233580 (100.0%), J12only 996169 (80.8%), MBTSbased 159385 (12.9%), j20MBTS 148260 (12.0%), sptrk4 128649 (10.4%), other 78026 (6.3%); suma rozłącznych 1233580; 427929 pary: all427929 289437, MB427929 289422, sptrk4_427929 147238; 427929: PS(mbts_L1MBTS_1) = 1 w 100.00% zdarzeń GRL z kandydatem (miękki próg 95 %)"
+ },
+ {
+  "gate": "G4 toy pass/fail",
+  "status": "NIE LICZONE",
+  "detail": "`btrig_toy.py` przy (f_S, f_B) klas — osobno; klasy×biny z det = NIE traktować jako niemierzalne"
+ },
+ {
+  "gate": "G5 domknięcie emulacji (miękka)",
+  "status": "NIE",
+  "detail": "χ²/ndf = 1018622.8/67 = 15203.32, max |pred/obs − 1| = 2.249; n_ref = 23844825, ε_k = {'J12': 0.0026, 'j20MBTS': 0.0312, 'sptrk4': 0.0701, 'mbts': 1.0} → ε_MC z metody B (gęstość), |A − B| jako syst."
+ },
+ {
+  "gate": "G6 zgodność klas i runu (WP95)",
+  "status": "ZDANE",
+  "detail": "5-8: p(χ²) = 0.231, SF95(MB427929) = 1.05 ± 0.11 (vs nominał +1.5σ, vs 1 +0.5σ) → §3: nie rozróżnia hipotez „0,83” i „1”; 8-30: p(χ²) = 0.128, SF95(MB427929) = 0.91 ± 0.07 (vs nominał -1.1σ, vs 1 -1.3σ)"
+ },
+ {
+  "gate": "G7 ε_B per klasa (reweighting per trigger?)",
+  "status": "TAK — per trigger",
+  "detail": "5-8@0.80: max|Δ| 35.2% (tol 5%), p = 0.003; 5-8@0.70: max|Δ| 49.6% (tol 10%), p = 0.012; 5-8@0.50: max|Δ| 101.5% (tol 25%), p = 0.000; 8-30@0.80: max|Δ| 58.3% (tol 5%), p = 0.000; 8-30@0.70: max|Δ| 88.7% (tol 10%), p = 0.000; 8-30@0.50: max|Δ| 141.7% (tol 25%), p = 0.000 [R_data_mc]"
+ },
+ {
+  "gate": "G8 izolacja per klasa (pull < 2)",
+  "status": "NIE",
+  "detail": "15 zestawów (cięcie × pT), max |pull| = 4.1, ≥ 2σ: 12 (oczekiwane z fluktuacji przy 15 skorelowanych testach: kilka %)"
+ }
+]

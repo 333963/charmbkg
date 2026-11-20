@@ -1,0 +1,19 @@
+! base_A3.cmnd — wspólne: pp 13,6 TeV, tune A3 (ATL-PHYS-PUB-2016-017; identycznie jak Q_lxplus/truth/pythia_dd.cc), stabilność cτ > 10 mm
+Beams:idA = 2212
+Beams:idB = 2212
+Beams:eCM = 13600.
+ParticleDecays:limitTau0 = on
+ParticleDecays:tau0Max = 10.
+Tune:ee = 7
+Tune:pp = 14
+PDF:pSet = 13
+MultipartonInteractions:bProfile = 2
+MultipartonInteractions:pT0Ref = 2.45
+MultipartonInteractions:ecmPow = 0.21
+MultipartonInteractions:coreRadius = 0.55
+MultipartonInteractions:coreFraction = 0.9
+SigmaTotal:zeroAXB = off
+SigmaDiffractive:PomFlux = 4
+SigmaDiffractive:PomFluxEpsilon = 0.07
+SigmaDiffractive:PomFluxAlphaPrime = 0.25
+ColourReconnection:range = 1.8

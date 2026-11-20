@@ -1,0 +1,50 @@
+{
+ "features": [
+  "log_pt",
+  "abs_eta",
+  "chi2",
+  "Lxy",
+  "impact_sig",
+  "abs_impact_z0",
+  "d_max_abs_d0",
+  "pointing",
+  "abs_cos_theta_star",
+  "abs_impact_sig",
+  "d_min_abs_d0",
+  "d_max_abs_z0",
+  "d_max_abs_eta",
+  "dedx_K",
+  "log_p_K",
+  "npts_K",
+  "dedx_pi_max",
+  "log_p_pi_min"
+ ],
+ "best_it": [
+  518,
+  605,
+  617,
+  685,
+  634
+ ],
+ "importance_fold0": {
+  "abs_cos_theta_star": 0.3736,
+  "d_min_abs_d0": 0.1236,
+  "pointing": 0.0811,
+  "d_max_abs_eta": 0.0614,
+  "Lxy": 0.048,
+  "abs_eta": 0.0398,
+  "log_p_K": 0.0363,
+  "d_max_abs_d0": 0.0315,
+  "dedx_K": 0.0289,
+  "abs_impact_z0": 0.0245,
+  "log_pt": 0.0223,
+  "npts_K": 0.0215,
+  "chi2": 0.0204,
+  "log_p_pi_min": 0.0191,
+  "impact_sig": 0.0179,
+  "d_max_abs_z0": 0.0172,
+  "abs_impact_sig": 0.0171,
+  "dedx_pi_max": 0.016
+ },
+ "sec": 857
+}

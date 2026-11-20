@@ -1,0 +1,2 @@
+! ABMST bez wymuszonej przerwy w rapidity
+SigmaDiffractive:ABMSTdampenGap = off

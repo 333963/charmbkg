@@ -1,0 +1,3 @@
+! CRqcd (konwencja projektu: Q_lxplus/syst/variants.sh) — rekoneksja QCD ze złączami + nowy model resztek wiązki
+ColourReconnection:mode = 1
+BeamRemnants:remnantMode = 1

@@ -1,0 +1,16 @@
+# BKGCAT — 8 węzłów (po ~10 plików mb_nd, ~2–5 min, 1 rdzeń); suma: bkg_job.sh merge (interaktywnie, < 1 min). NIEUŻYTE 20.11 — wystarczyły przebiegi interaktywne.
+Q          = /afs/cern.ch/user/k/klyczak/private/charm_q/Q_lxplus
+universe   = vanilla
+executable = /bin/bash
+arguments  = $(Q)/bkgcat/bkg_job.sh $(Process) 8
+output     = $(Q)/logs/bkgcat/bkg.$(ClusterId).$(Process).out
+error      = $(Q)/logs/bkgcat/bkg.$(ClusterId).$(Process).err
+log        = $(Q)/logs/bkgcat/bkg.log
+request_cpus   = 1
+request_memory = 4GB
+request_disk   = 2GB
++JobFlavour    = "espresso"
++JobBatchName  = "charm_bkgcat"
+should_transfer_files = NO
+getenv     = False
+queue 8

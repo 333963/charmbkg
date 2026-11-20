@@ -1,0 +1,3 @@
+! ε = 0,02: dolna granica dozwolona w Pythii 8.317 (≈ dolny kraniec 1σ pomiaru ATLAS z przerw w rapidity)
+SigmaDiffractive:PomFlux = 4
+SigmaDiffractive:PomFluxEpsilon = 0.02

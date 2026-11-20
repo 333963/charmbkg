@@ -1,0 +1,16 @@
+# Węzeł DAG SALAD427 (VARS node, args, cpus, mem, disk, flavour, penv z s427.dag).
+Q          = /afs/cern.ch/user/k/klyczak/private/charm_q/Q_lxplus
+universe   = vanilla
+executable = /bin/bash
+arguments  = $(Q)/salad427/s427_job.sh $(args)
+output     = $(Q)/logs/salad427/s427_$(node).$(ClusterId).out
+error      = $(Q)/logs/salad427/s427_$(node).$(ClusterId).err
+log        = $(Q)/logs/salad427/s427.log
+request_cpus   = $(cpus)
+request_memory = $(mem)
+request_disk   = $(disk)
++JobFlavour    = "$(flavour)"
+should_transfer_files = NO
+getenv     = False
+environment = "$(penv)"
+queue

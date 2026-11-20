@@ -1,0 +1,16 @@
+# Węzeł DAG DLZ_DATA (VARS node, args, cpus, mem, disk, flavour, penv z dlz.dag).
+Q          = /afs/cern.ch/user/k/klyczak/private/charm_q/Q_lxplus
+universe   = vanilla
+executable = /bin/bash
+arguments  = $(Q)/dlz_data/dlz_job.sh $(args)
+output     = $(Q)/logs/dlz_data/dlz_$(node).$(ClusterId).out
+error      = $(Q)/logs/dlz_data/dlz_$(node).$(ClusterId).err
+log        = $(Q)/logs/dlz_data/dlz.log
+request_cpus   = $(cpus)
+request_memory = $(mem)
+request_disk   = $(disk)
++JobFlavour    = "$(flavour)"
+should_transfer_files = NO
+getenv     = False
+environment = "$(penv)"
+queue

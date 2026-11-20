@@ -1,0 +1,20 @@
+{
+ "data_428770": {
+  "n_files": 97,
+  "n_before_veto": 56640726,
+  "n_after_veto": 55253987,
+  "n_loose": 7167801,
+  "n_feat": 6098196,
+  "n_all_hist": 55253987,
+  "n_mb_hist": 968
+ },
+ "data_427929": {
+  "n_files": 458,
+  "n_before_veto": 19789131,
+  "n_after_veto": 19313580,
+  "n_loose": 2668507,
+  "n_feat": 2263409,
+  "n_all_hist": 19313580,
+  "n_mb_hist": 14494522
+ }
+}

@@ -1,0 +1,32 @@
+# models.txt — model  njobs  nev/job  pliki cmnd (models/<x>.cmnd, czytane po kolei; późniejsze nadpisują)
+# Czasy (test lxplus 17.11, bez inicjalizacji ~8 s): ND 2,5 ms/zd., dyfrakcja miękka 0,6–0,9 ms, hardccbar ~1,3 ms, doHard typ 3 ~1,3 ms, typ 4 ~1,6 ms.
+# --- ND z protonem wiodącym („tło fizyczne”, też mianownik R): wspólne dla wszystkich wariantów strumienia
+nd_A3        100 1000000 base_A3,proc_nd
+nd_Monash     40 1000000 base_Monash,proc_nd
+# --- dyfrakcja miękka SD+DD+CD (SoftQCD), warianty strumienia Pomeronu (σ_SD/DD/CD: SaS, poza MBR)
+dif_A3        20 1000000 base_A3,proc_dif
+dif_SaS       10 1000000 base_A3,proc_dif,flux_SaS
+dif_DL085     10 1000000 base_A3,proc_dif,flux_DL085
+dif_DL10      10 1000000 base_A3,proc_dif,flux_DL10
+dif_DL04      10 1000000 base_A3,proc_dif,flux_DL04
+dif_MBR       10 1000000 base_A3,proc_dif,flux_MBR
+dif_H1A       10 1000000 base_A3,proc_dif,flux_H1A
+dif_H1B       10 1000000 base_A3,proc_dif,flux_H1B
+dif_sigPp25   10 1000000 base_A3,proc_dif,sigPp25
+dif_Monash    10 1000000 base_Monash,proc_dif
+# --- twarda dyfrakcja: HardQCD cc̄ + bb̄ (pTHatMin = 0); incl = mianownik, typ 3 = bez tłumienia MPI, typ 4 = dynamiczna przerwa
+hq_incl        8  500000 base_A3,proc_hq
+hq_t3          8  250000 base_A3,proc_hq,hard_t3
+hq_t4         10  200000 base_A3,proc_hq,hard_t4
+hq_t3_SaS      8  250000 base_A3,proc_hq,flux_SaS,hard_t3
+hq_t4_SaS     10  200000 base_A3,proc_hq,flux_SaS,hard_t4
+hq_t3_H1B      8  250000 base_A3,proc_hq,flux_H1B,hard_t3
+hq_t4_H1B     10  200000 base_A3,proc_hq,flux_H1B,hard_t4
+# --- 17.11 (poprawka): strumień faktycznie włączony (SigmaDiffractive:mode = 0, σ jak SaS) — own.cmnd na końcu listy
+dif_own_SaS    10 1000000 base_A3,proc_dif,flux_SaS,own
+dif_own_DL07   10 1000000 base_A3,proc_dif,own
+dif_own_DL04   10 1000000 base_A3,proc_dif,flux_DL04,own
+dif_own_DL085  10 1000000 base_A3,proc_dif,flux_DL085,own
+dif_own_DL10   10 1000000 base_A3,proc_dif,flux_DL10,own
+dif_own_H1A    10 1000000 base_A3,proc_dif,flux_H1A,own
+dif_own_H1B    10 1000000 base_A3,proc_dif,flux_H1B,own

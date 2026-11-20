@@ -1,0 +1,16 @@
+# Węzeł DAG B_trig (VARS args, cpus, mem, disk, flavour, penv z bt.dag).
+Q          = /afs/cern.ch/user/k/klyczak/private/charm_q/Q_lxplus
+universe   = vanilla
+executable = /bin/bash
+arguments  = $(Q)/b_trig/bt_job.sh $(args)
+output     = $(Q)/logs/b_trig/bt_$(node).$(ClusterId).out
+error      = $(Q)/logs/b_trig/bt_$(node).$(ClusterId).err
+log        = $(Q)/logs/b_trig/bt.log
+request_cpus   = $(cpus)
+request_memory = $(mem)
+request_disk   = $(disk)
++JobFlavour    = "$(flavour)"
+should_transfer_files = NO
+getenv     = False
+environment = "$(penv)"
+queue

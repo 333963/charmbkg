@@ -1,0 +1,3 @@
+HardQCD:hardccbar = on
+HardQCD:hardbbbar = on
+PhaseSpace:pTHatMin = 0.

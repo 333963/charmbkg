@@ -1,0 +1,19 @@
+# Węzeł DAG DNET etap 2 (VARS node, args, cpus, gpus, mem, disk, flavour, penv z dn2.dag).
+Q          = /afs/cern.ch/user/k/klyczak/private/charm_q/Q_lxplus
+universe   = vanilla
+executable = /bin/bash
+arguments  = $(Q)/dnet2/dn2_job.sh $(args)
+output     = $(Q)/logs/dnet2/dn2_$(node).$(ClusterId).out
+error      = $(Q)/logs/dnet2/dn2_$(node).$(ClusterId).err
+log        = $(Q)/logs/dnet2/dn2.log
+request_cpus   = $(cpus)
+request_gpus   = $(gpus)
+# 18.11: Tesla V100 (capability 7.0) nie jest obsługiwana przez torch 2.11 z LCG_110_cuda („no kernel image”)
+require_gpus   = Capability > 7.0
+request_memory = $(mem)
+request_disk   = $(disk)
++JobFlavour    = "$(flavour)"
+should_transfer_files = NO
+getenv     = False
+environment = "$(penv)"
+queue

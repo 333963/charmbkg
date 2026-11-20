@@ -1,0 +1,17 @@
+# Domknięcie sd_var (19.11.2026 wieczór): brakujące części CRqcd z nowymi ziarnami + 2 joby diagnostyczne (gdb). Tylko CPU, 1 rdzeń, 2 GB.
+# Limit czasu: +MaxRuntime (s) per węzeł — zawieszony job jest zdejmowany po limicie, bez ponowień (RETRY 0 w DAG-u).
+Q          = /afs/cern.ch/user/k/klyczak/private/charm_q/Q_lxplus
+universe   = vanilla
+executable = /bin/bash
+arguments  = $(Q)/sd_var/$(script) $(step) $(model) $(seed) $(nev) $(cm)
+output     = $(Q)/logs/sd_var/close_$(step)_$(model)_$(seed).$(ClusterId).out
+error      = $(Q)/logs/sd_var/close_$(step)_$(model)_$(seed).$(ClusterId).err
+log        = $(Q)/logs/sd_var/sdclose.log
+request_cpus   = 1
+request_memory = 2GB
+request_disk   = 2GB
++MaxRuntime    = $(maxrt)
+should_transfer_files = NO
+getenv     = False
+environment = "$(penv)"
+queue

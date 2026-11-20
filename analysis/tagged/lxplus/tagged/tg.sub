@@ -1,0 +1,16 @@
+# TAGGED — jeden węzeł (mapa uid → zdarzenie z evtable + tabela kandydatów tagowanych + histogramy inkluzywne; ~15 min, 1 rdzeń).
+Q          = /afs/cern.ch/user/k/klyczak/private/charm_q/Q_lxplus
+universe   = vanilla
+executable = /bin/bash
+arguments  = $(Q)/tagged/tg_job.sh
+output     = $(Q)/logs/tagged/tg.$(ClusterId).out
+error      = $(Q)/logs/tagged/tg.$(ClusterId).err
+log        = $(Q)/logs/tagged/tg.log
+request_cpus   = 1
+request_memory = 4GB
+request_disk   = 2GB
++JobFlavour    = "longlunch"
++JobBatchName  = "charm_tagged"
+should_transfer_files = NO
+getenv     = False
+queue

@@ -1,0 +1,44 @@
+{
+ "dif_A3": {
+  "njobs": 1,
+  "n_ok": 40000,
+  "sigma_mb": 22.9975,
+  "n_D_tag": 77.0
+ },
+ "dif_H1B": {
+  "njobs": 1,
+  "n_ok": 20000,
+  "sigma_mb": 22.9975,
+  "n_D_tag": 36.0
+ },
+ "dif_MBR": {
+  "njobs": 1,
+  "n_ok": 20000,
+  "sigma_mb": 21.5029,
+  "n_D_tag": 22.0
+ },
+ "hq_incl": {
+  "njobs": 1,
+  "n_ok": 20000,
+  "sigma_mb": 4.98406,
+  "n_D_tag": 16.0
+ },
+ "hq_t3": {
+  "njobs": 1,
+  "n_ok": 20000,
+  "sigma_mb": 0.749633,
+  "n_D_tag": 1848.0
+ },
+ "hq_t4": {
+  "njobs": 1,
+  "n_ok": 10000,
+  "sigma_mb": 0.331127,
+  "n_D_tag": 476.0
+ },
+ "nd_A3": {
+  "njobs": 1,
+  "n_ok": 40000,
+  "sigma_mb": 55.5871,
+  "n_D_tag": 3.0
+ }
+}

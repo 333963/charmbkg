@@ -1,0 +1,125 @@
+# Results of project B (analysis reports)
+
+Reports, tables, small JSON results and figures of the analysis steps of 4-20 November 2026 (most of them 16-20 November).
+The source files are in Polish and are stored as written; scripts are in [`analysis/<topic>/`](../../analysis/). All results are preliminary;
+most are post hoc with respect to earlier steps (each report states its status and the criteria written before the computation).
+
+Layout: `docs/results/<topic>/` keeps the layout of the working directory (`RAPORT.md`, `tabele/`, `out/`, `runs/`, `fig/`).
+Binary inputs and outputs (npz, h5, ROOT, models), logs and backup copies are not stored; neither are JSON / CSV outputs above 1 MB
+(exception: `tagreg/runs/lxplus/ps_perLB_*.csv`, needed for the luminosity per region).
+
+The topics of the first batch (1.2.0) are the steps of 17-20.11; the second batch (1.3.0, added 20.11.2026) brings the older working
+directories: trigger and data sample, accidental proton tag, Pythia predictions, classifier inputs, background estimators, audits and
+literature surveys. Where a directory holds both a test-sample report and the full-sample one, the row says which file is the result.
+Headline numbers with their status are collected in the top-level [overview](../../PRZEGLAD.md).
+
+
+## Network and classifier inputs
+
+| topic | what | result in one sentence | file |
+|---|---|---|---|
+| `dnet` | Neural-network classifier for D0->Kpi and D+->Kpipi against the XGB tree H (stages 1-6: criteria written before each stage, training/apply/analysis packages, verdict scripts). | The tree H stays nominal: stage 4 passes the D*-tag stability checks, stage 5a is undecided / dropped after one seed, stage 6 (soft-pion masking) passes P1 but fails S (scale factor undetermined); the sideband proxy overestimates the gain. | [dnet/RAPORT.md](dnet/RAPORT.md) (verdicts: dnet/runs/lxplus{4,5,6}/WERDYKT_etap*.md) |
+| `feat_charmnet` | Whether CharmNet inputs absent from the tree H (isolation, impact parameters, daughter z0, pT ratios, Armenteros alpha, Dalitz, dE/dx) raise Zproxy and are modelled in data (16.11). | D+ Dalitz inputs are GO (+9-11 % Zproxy on MC, C2ST +0.001); isolation (+17-21 % on MC, C2ST 0.578 -> 0.774 for D0) and dE/dx (+0.7 %, C2ST 0.915) are NO-GO; the well-modelled D0 set is only a conditional GO (+7 / +5 / +5 %). | [feat_charmnet/RAPORT.md](feat_charmnet/RAPORT.md) |
+| `dlz_dplus` | D+ classifier H+DLZ (tree H plus Dalitz and daughter-kinematics inputs, no dE/dx): MC and sideband study (16.11), data test and scans (17-18.11). | Negative: H+DLZ is not adopted, H stays nominal for D+; the gain in sigma(N)/N in run 427929 is +20.7 +- 2.9 / +9.1 +- 3.0 / +4.2 +- 2.9 %, but the sculpting and relative-SF criteria fail and a fit bias within 5 % was not shown. | [dlz_dplus/RAPORT.md](dlz_dplus/RAPORT.md) (Sec. 9; copy with two project-A passages left out), [DATA](dlz_dplus/DATA_2026-11-17/RAPORT.md), [SCAN](dlz_dplus/SCAN_2026-11-17/RAPORT.md) (+ K1b, K1c, K1d) |
+| `dlz_d0` | New input features for the D0->Kpi tree H (daughter impact parameters, proper time, decay kinematics, dE/dx) on MC and run-428770 sidebands (17.11). | Negative: no gain >= 10 % without sculpting; the best safe set (H + daughter impact parameters) gives +8...+10 % Zproxy on MC and +5...+9 % on data sidebands at WP70; the daughter-kinematics sets reproduce the mass (R^2 = 0.80) and are rejected. | [dlz_d0/RAPORT.md](dlz_d0/RAPORT.md) |
+| `cn_clone` | Clone of the D0 CharmNet with and without isolation inputs (ptcone40, ptcone100): D*-tag scale factors, cost and gain of isolation (17.11). | Full run: at WP80 in run 428770 SF_iso/SF_noiso = 0.91 +- 0.12 (5-8 GeV) and 0.94 +- 0.05 (8-30 GeV), the cost is undecided; the gain from isolation survives in data (G = 1.55 +- 0.21 / 1.36 +- 0.07 against 1.16 / 1.14 in MC). | [cn_clone/RAPORT.md](cn_clone/RAPORT.md) (`out_test/` is a one-file mechanics test - not to be quoted) |
+| `sig_constr` | 'Signal by construction': D*-tagged D0 from data instead of MC signal for training or reweighting the classifier, isolation calibration and embedding (17.11). | Mostly negative: no data-driven variant beats the MC-trained H (run 427929: from scratch 0.899 +- 0.030, fine-tuned 0.980 +- 0.017; n_eff 102-191 against 3000 needed); a gain only with isolation inputs in the jet-triggered class (1.055-1.093 at WP80); embedding is not a calibration. | [sig_constr/RAPORT.md](sig_constr/RAPORT.md) |
+
+## Working point and fit
+
+| topic | what | result in one sentence | file |
+|---|---|---|---|
+| `wpscan` | Working-point scan of the tree H and of the network with a real peak fit (19 score intervals, 12 cells). | Post hoc: tightening the tree H from WP70 to eps = 0.50 / 0.35 scales the 3-5 GeV yield error by x 0.68 / 0.52 (D0) and x 0.66 / 0.80 (D+) in run 427929, no gain at 8-30 GeV; nominal unchanged; the N/eps_MC drift was later attributed to fit bias (correction of 19.11 at the end of the report). | [wpscan/RAPORT.md](wpscan/RAPORT.md) |
+| `wptight` | Calibrated tight working point of the tree H: SF_rel from a pass/fail fit of the inclusive peak and the yield error balance. | Negative: a tight working point with SF_rel from the same inclusive peak does not robustly beat WP70 (HESSE error ratio 0.90-1.08 in 10 of 12 cells); D0 fails the MC closure; the D+ SF_rel on MC, 0.949 +- 0.023, is fit bias; WP70 stays. | [wptight/RAPORT.md](wptight/RAPORT.md) |
+| `fitbias` | Bias of the inclusive mass fit at low S/B and the attempt to repair it; origin of the D0 fit model M8. | There is no single bias: D+ signal is overestimated in the loose category, the absolute D0 yield is underestimated (-14 to -27 % at WP70 with the old model). | [fitbias/RAPORT.md](fitbias/RAPORT.md) |
+| `fitbias_dplus` | Nominal mass-fit model for D+->K-pi+pi+. | Nominal D+ model A2; run 427929 yields 3404 +- 292 +- 142, 1630 +- 102 +- 21, 651 +- 53 +- 36 (3-5 / 5-8 / 8-30 GeV); the closure criterion is not met at 5-8 GeV. | [fitbias_dplus/RAPORT.md](fitbias_dplus/RAPORT.md) |
+| `m8_recalc` | Quantities of the methods note recomputed with the new nominal D0 fit model M8. | The 3-5 GeV gain of a tighter working point is kept; at 5-8 GeV in run 427929 it disappears. | [m8_recalc/RAPORT.md](m8_recalc/RAPORT.md) |
+| `bkgcat` | MC background of the tree H decomposed into truth categories (mass x score x category). | At WP70 the D0 background at 3-5 GeV is 83.4 % non-charm combinatorics and the D0 dip there (-22.1 +- 9.1 %, 2.4 sigma) is a fluctuation; the factors 1.364 (D0) / 1.068 (D+) are artefacts of the topological decayType. | [bkgcat/RAPORT.md](bkgcat/RAPORT.md) |
+| `catfit` | Simultaneous mass fit in score categories instead of the WP70 cut. | Negative: no gain in the total cross-section error in any of the 6 bins; with free fractions it grows 1.5-10x. | [catfit/RAPORT.md](catfit/RAPORT.md) |
+| `fit_scorebins` | Toy study of the simultaneous mass fit in score categories against a single cut, D0 and D+ (17.11; data sidebands only). | Conditionally worthwhile on toys: with 5 categories the statistical gain over the best cut is 5.5-14.8 % (D0) and 9.4-10.7 % (D+), the total error (stat + SF) falls by 23-37 % at sigma_SF = 5 %; the fit on real data (`catfit`) did not confirm a gain. | [fit_scorebins/RAPORT.md](fit_scorebins/RAPORT.md) |
+| `fit_scorebins/R3` | Scale factor from the score shape in 6 categories instead of pass/fail (18.11). | Negative: the same error as pass/fail (0.91-1.02x, criterion <= 0.8; SF70 = 0.991 +- 0.041 against 0.986 +- 0.043, run 428770, 8-30 GeV); by-product: the SF correlation matrix between working points. | [fit_scorebins/R3_2026-11-18/RAPORT.md](fit_scorebins/R3_2026-11-18/RAPORT.md) |
+| `fit_scorebins/HIGHSCORE` | Signal deficit at high score in 8-30 GeV (18.11; exploratory, post hoc). | About 2/3 of the deficit (rho50 = 0.741 +- 0.036, run 428770) is a pT-spectrum mismatch inside the wide bin (0.905 +- 0.048 after pT reweighting); the rest (~0.88 +- 0.04, -2.8 sigma local) is unresolved. | [fit_scorebins/HIGHSCORE_2026-11-18/RAPORT.md](fit_scorebins/HIGHSCORE_2026-11-18/RAPORT.md) |
+| `lowpt_calib` | Feasibility of calibrating eps_S of the tree H by a working-point scan on inclusive D+ (and D0), both runs (18.11). | Negative: NOT USABLE as a calibration at 3-5 GeV - the 2-sigma sensitivity to rho(70/90) in run 427929 is 20.6 % (threshold 15 %); injected 0.90 is recovered as 0.922 +- 0.120; usable only as a consistency test at the 10-20 % level. | [lowpt_calib/RAPORT.md](lowpt_calib/RAPORT.md) |
+| `peak_pos` | Position and width of the D and anti-D mass peaks from data: sizes of the peak-position / peak-width systematics and a weak-mode (sagitta) bound (16.11). | D+ and D*-tagged D0 combined (WP70, run 428770): data - MC position -0.43 +- 0.51 MeV, width ratio 0.956 +- 0.034; proposed +-0.5 MeV for the position, +-10 % for the width kept; no weak-mode effect. | [peak_pos/RAPORT.md](peak_pos/RAPORT.md) |
+| `peak_lxy010` | Mass peak and K<->pi reflection at the selection L_xy >= 0.10 mm (D*-tagged D0, both runs; 18.11). | Sec. 7 supersedes the preliminary part: adding the 0.10-0.25 mm slice does not shift Delta-m (3-5 GeV: -6 +- 26 keV after MC subtraction); reflection data/MC 0.97 +- 0.07 and 1.11 +- 0.08. | [peak_lxy010/RAPORT.md](peak_lxy010/RAPORT.md) (Sec. 7; tables in peak_lxy010/v2/out/tables_v2.md) |
+| `konstr` | Background 'by construction' in three weak places of the measurement (K<->pi reflection from data, tagged-fit background, D0 at 2-3 GeV). | Mostly cross-checks: the untagged-sample background shape reproduces the tagged yield (N_tag 54.1 vs 54.7); the reflection estimator sculpts at low pT. | [konstr/RAPORT.md](konstr/RAPORT.md) |
+| `d23_plan` | D candidates at pT 2-3 GeV: file locations, download package and feasibility estimate, then the first D+ -> K pi pi fit there (18.11). | D+ peak at 2-3 GeV seen in both runs at WP20: N_S = 705 +- 53 (Z = 13.2) in 427929, 626 +- 74 (Z = 8.4) in 428770; no cross-section (eps_S data/MC not measurable, H outside its training range); D0 and D* not visible. | [d23_plan/ANALIZA/RAPORT.md](d23_plan/ANALIZA/RAPORT.md) (result), [d23_plan/RAPORT.md](d23_plan/RAPORT.md) (plan) |
+| `d23_d0_check` | Independent verification of the D0->Kpi peak at pT 2-3 GeV. | The peak is real in both runs and for both classifiers; a non-signal admixture of <= 20-30 % is not excluded and the yield is uncalibrated. | [d23_d0_check/RAPORT.md](d23_d0_check/RAPORT.md) |
+
+## Background under the peak: estimators and templates
+
+| topic | what | result in one sentence | file |
+|---|---|---|---|
+| `b1_salad_v1` | SALAD v1.0 frozen as the background estimator under the peak, with adversarial closure tests on MC for D+ and D0 (04.11). | C2ST is blind to composition: for D+ a +4.7 pp local MisMatch* admixture gives C2ST 0.507 but eps_B pred/true 0.845 / 0.809 / 0.70 at WP80/70/50 (criterion not met); D0 passes (0.972 / 0.949 / 0.850); SALAD kept as the eps_B estimator. | [b1_salad_v1/out_D0/charm-B1-salad-v1.md](b1_salad_v1/out_D0/charm-B1-salad-v1.md) (complete), [b1_salad_v1/charm-B1-salad-v1.md](b1_salad_v1/charm-B1-salad-v1.md) (D+ only) |
+| `salad_427929` | SALAD v1.0 background reweighting on run 427929 (MBTS) and in trigger classes of run 428770, with weight transfer between classes; sidebands and background only (17.11). | D0 confirmed in pure minimum bias (n_eff/N 0.93; under the peak R - 1 = +3.6 +- 4.7 % at WP80, +4.1 +- 6.6 % at WP70); D+ inconclusive; the weights transfer eps_B but not the distributions to the jet-triggered class (C2ST 0.637). | [salad_427929/RAPORT.md](salad_427929/RAPORT.md) (Sec. 7; the header is stale), [salad_427929/WYNIKI.md](salad_427929/WYNIKI.md) |
+| `est_spread` | Spread of background estimators under the peak as the background-model systematic, D0 and D+, data and MC closures (17.11). | Data-based D0 estimators in run 427929 agree within an RMS of 1.0-3.5 % (3-5 GeV), 2.2-4.4 % (5-8), 1.7-8.1 % (8-30), below the adopted budget; the spread does not cover a local composition change. | [est_spread/RAPORT.md](est_spread/RAPORT.md) |
+| `mc_templates` | Test of MC-fixed background templates (Reflection, CharmMismatch, DecayModeMismatch, PartComb) with our selection and the tree H (17.11). | Tables only, no prose verdict: D*-tag reflection R/S data/MC = 0.983 +- 0.073 (run 427929, 3-30 GeV, WP80); several cells are flagged as inconsistent (e.g. the D* peak in D+ candidates). | [mc_templates/runs/lxplus/ana/WYNIKI.md](mc_templates/runs/lxplus/ana/WYNIKI.md) (result), [mc_templates/RAPORT.md](mc_templates/RAPORT.md) (plan, written before the run) |
+| `dstws` | D* background 'by construction': D0 combined with a track from the Tracks tree (RS / WS / ROT / MIX) as the Delta-m background template (17.11). | Tables only, no prose verdict: the scale factor is stable against the template choice only in run 427929 at 8-30 GeV (WP95: 0.91 +- 0.07 nominal against 0.90 / 0.89 / 0.91), unstable in most other cells. | [dstws/RAPORT.md](dstws/RAPORT.md) (full run; `RAPORT_test2.md` and `runs/test/` are test samples) |
+| `fmm_data` | Fraction of MisMatch* background under the D0 peak from K<->pi twin candidates: MC truth against data estimators (17.11). | Negative as a measurement: `hypo_swap` is an MC-truth flag and the twin observable does not identify MisMatch* (AUC ~ 0.5); the template fit only bounds the local composition change. | [fmm_data/RAPORT.md](fmm_data/RAPORT.md) |
+
+## Efficiency
+
+| topic | what | result in one sentence | file |
+|---|---|---|---|
+| `sfabs` | Absolute scale factor of the tree H at WP70: D+ in three pT bins and D0 at 3-5 GeV. | Post hoc: combined SF(WP70) = 0.949 +- 0.048 / 0.993 +- 0.052 / 0.990 +- 0.051 for D+ (3-5 / 5-8 / 8-30 GeV) and 0.967 +- 0.033 for D0 at 3-5 GeV, dominated by the transfer of SF_ref = 0.968 +- 0.029 +- 0.012 from the D* tag; the final cross-section uses 0.949 +- 0.080 for D+ at 3-5 GeV (xsec_final/v2/ZMIANY.md). | [sfabs/RAPORT.md](sfabs/RAPORT.md) (values in sfabs/out/final.json) |
+| `ev_dstar` | Event-level D0<-D* pairs (04.11) and the K<->pi swap truth re-labelled from closest_mass to pdgid (16.11). | The pdgid truth does not explain the WP95 anomaly at 5-8 GeV: eps_MC changes by +0.004 and SF95 = 0.83 +- 0.07 (0.83 +- 0.08 with closest_mass; 8-30 GeV: 1.00 +- 0.03); errors are those of the old pass/fail fit. | [ev_dstar/EV_pdgid.md](ev_dstar/EV_pdgid.md) |
+| `iso_pis` | Soft pion of the D* inside the D0 isolation variables (MC only). | The mechanism is real (pi_s is inside ptcone for >= 95 % of tagged D0) but changes the run-427929 scale factor by < 0.5 %. | [iso_pis/RAPORT.md](iso_pis/RAPORT.md) |
+| `iso_sf` | Isolation scale factor of D0 from the D* tag (ptcone40 / ptcone100), two local files of run 428770 (16.11). | Early, low statistics (N_sig = 176 +- 26): SF(ptcone40 < 1) = 0.45 +- 0.12, < 2: 0.60 +- 0.10; the full-sample measurement per trigger class is in `b_trig`. | [iso_sf/RAPORT.md](iso_sf/RAPORT.md) |
+| `iso_ped` | D0 isolation with the underlying-event pedestal subtracted (hypothesis R4, variants V1-V3), both runs (18.11). | R4 not confirmed: the subtraction moves the run-428770 scale factor towards 1 by 4-6 sigma but does not close it (5-8 GeV 0.60 -> 0.74-0.77, 8-30 GeV 0.51 -> 0.61-0.68) and raises eps_B by 22-47 %; run 427929 unchanged. | [iso_ped/RAPORT.md](iso_ped/RAPORT.md) |
+| `veto_pv` | Efficiency of the vertex veto `nPileupVertices == 0` in the inclusive sample and in MC, both runs (18.11). | eps_veto of the D* signal: 93.95 +- 0.73 % (428770), 98.60 +- 0.69 % (427929), MC 99.25 +- 0.04 %; normalisation correction x 0.955 +- 0.005 (428770) and x 0.993 +- 0.003 (427929); the veto does not cancel in the tagged/inclusive ratio. | [veto_pv/RAPORT.md](veto_pv/RAPORT.md) |
+
+## Trigger and data sample
+
+| topic | what | result in one sentence | file |
+|---|---|---|---|
+| `b_trig` | Robustness of the project-B results (D*-tag scale factor of the tree H, eps_B, isolation) against the trigger class and the independent MBTS run 427929; gates G1-G8 (17.11). | G6 passed: the WP95 scale factor agrees across trigger classes and runs (427929: 1.05 +- 0.11 at 5-8 GeV, 0.91 +- 0.07 at 8-30 GeV) but cannot separate 0.83 from 1; eps_B (G7) and isolation (G8: SF 0.51 +- 0.02 against 0.98 +- 0.04) depend on the trigger. | [b_trig/runs/lxplus/out/RAPORT_DANE.md](b_trig/runs/lxplus/out/RAPORT_DANE.md), b_trig/PROCEDURA.md |
+| `b_trig/ISO_origin` | Origin of the isolation deficit. | The deficit (SF_iso 0.98 +- 0.04 in run 427929 against 0.51 +- 0.02 in 428770) follows the trigger, not the run or pile-up: run 427929 split by the j20 bit gives 0.58 +- 0.08 / 1.13 +- 0.04. | [b_trig/ISO_origin/RAPORT.md](b_trig/ISO_origin/RAPORT.md) |
+| `b_trig/TRKJET`, `TRKJET2` | Can a reweighting in track-jet variables, the pedestal or a trigger-unbiased subsample close the isolation scale factor of the jet-triggered class? | Negative, both hypotheses rejected (best: 0.704 +- 0.036 with chi2/ndf 80.7/4; pedestal 0.906 +- 0.021; unbiased subsample 0.400 +- 0.125 against inclusive 0.455 +- 0.027). | [b_trig/TRKJET/RAPORT.md](b_trig/TRKJET/RAPORT.md), [b_trig/TRKJET2/RAPORT.md](b_trig/TRKJET2/RAPORT.md) |
+| `b_trig/BKG_427929` | How much of the eps_B data/MC mismatch is due to the trigger. | About 1/3 (3-5 GeV) and 1/2 (5-8 GeV); the rest stays in pure minimum bias (R = 0.86-0.88 in 427929 against 0.79-0.82 in 428770 at 3-5 GeV) and closes only with a reweighting that includes the score. | [b_trig/BKG_427929/RAPORT.md](b_trig/BKG_427929/RAPORT.md) |
+| `b_trig/AFPSTREAM` | Is the AFP-triggered part of run 428770 a minimum-bias sample? | No: 73 % of its events are written by `HLT_mb_sptrk_pt4_L1AFP_A_OR_C`; isolation scale factor 0.65 +- 0.11 unweighted, 0.78 +- 0.13 reweighted (N_sig = 86 +- 12). | [b_trig/AFPSTREAM/RAPORT.md](b_trig/AFPSTREAM/RAPORT.md) |
+| `tagreg` | Trigger composition, prescales and luminosity fractions of the AFP-tagged region; predicted tagged yields in run 427929; xi_cal cut efficiency (18.11; `v2/` with all trigger bits). | v2: regions R1 `noalg_L1AFP_A_OR_C` (F = 0.0159), R2 `j20_L1AFP_A_OR_C` (F = 0.956, strongly biased) and R3 `noalg_L1J12` (F = 1) hold 92.4 % of the tagged events with a D0; the first version ('proton + track, 28 nb^-1') is superseded; luminosities in nb^-1 are in `lumi`. | [tagreg/v2/RAPORT.md](tagreg/v2/RAPORT.md), [tagreg/RAPORT.md](tagreg/RAPORT.md) (v1) |
+
+Related document: [`../data_stream_428770.md`](../data_stream_428770.md) - the run-428770 ntuples come from the `physics_Main` stream, while the `mb_sptrk` / MBTS chains write to the `MinBias` stream (finding of 20.11, preliminary; the stream assignment is confirmed in the trigger-menu source, the existence of the `physics_MinBias` AOD is not checked).
+
+## Normalisation and cross-section
+
+| topic | what | result in one sentence | file |
+|---|---|---|---|
+| `lumi` | Integrated luminosity of runs 427929 and 428770 per trigger chain / region. | Run 427929 (MBTS): 0.4737 nb^-1, 0.4648 +- 0.0103 nb^-1 for our copy of the files; run 428770: R1 0.4687 +- 0.0104, R2 27.65 +- 0.61, R3 29.41 +- 0.68 nb^-1. | [lumi/RAPORT.md](lumi/RAPORT.md) |
+| `br_frag` | External inputs to the fiducial single-D cross-section: branching ratios (PDG 2026) and fragmentation fractions; public sources only (18.11). | Only the branching ratios are needed externally, with relative uncertainties of 0.76 % (D0), 1.50 % (D+), 1.06 % (D*+ chain); BR cancels in R = sigma_tag/sigma_incl, the non-prompt fraction does not. | [br_frag/RAPORT.md](br_frag/RAPORT.md) |
+| `cver` | Verification of the definition C = A*eps against the decay mode. | sigma_corr = sigma_XSEC x 0.734 +- 0.002 (D0) and x 0.939 +- 0.001 (D+), independent of pT. | [cver/RAPORT.md](cver/RAPORT.md) |
+| `xsec_atlas` | Inclusive measurement of run 427929 complemented with elements of the published ATLAS approach (cut-based selection, D*, missing budget rows). | Rectangular cuts confirm the D0 cross-section (R = 0.99 +- 0.10); D* softens but does not remove the tension with references. | [xsec_atlas/RAPORT.md](xsec_atlas/RAPORT.md) |
+| `xsec_final` | Final computation of sigma(D0), sigma(D+), run 427929; v1 and v2/ (v2 = final result). | Final tables: v2/tabele/final.md (D+ model A2, enlarged SF errors); e.g. sigma(D0) = 1028 +- 119 +- 274 +- 23, 278 +- 29 +- 49 +- 6, 100 +- 10 +- 21 +- 2 microbarn (3-5 / 5-8 / 8-30 GeV). | [xsec_final/RAPORT.md](xsec_final/RAPORT.md), xsec_final/v2/ZMIANY.md |
+| `reg428` | Jet-trigger run 428770 per trigger region: yields, SF, jet-trigger efficiency for events with D. | No region of run 428770 gives a second absolute point. | [reg428/RAPORT.md](reg428/RAPORT.md) |
+
+## Proton-tagged measurement
+
+| topic | what | result in one sentence | file |
+|---|---|---|---|
+| `tagged` | D mesons in events with an AFP proton tag: first reading. | D0, run 427929, MBTS, 3-30 GeV, WP70: N_tag = 54.7 -18.7 +19.4 (stat) +- 12.6 (shape), local Z = 3.05 - an indication, not an observation. | [tagged/RAPORT.md](tagged/RAPORT.md) |
+| `tagxsec` | Fiducial cross-section of D0 + proton in AFP and the ratio to the inclusive one. | R_fid = 0.99 -0.34 +0.35 (stat) +- 0.28 (syst) %, sigma_tag_fid = 13.6 -4.7 +4.8 +- 4.6 microbarn (window-minus-sidebands variant: 0.54 % / 7.4 microbarn); the addendum, updated with the final inclusive inputs, quotes +- 0.29 % and 13.9 microbarn. | [tagxsec/RAPORT.md](tagxsec/RAPORT.md) |
+| `afp_acceptance` | AFP acceptance, tag efficiency, trigger and model factor for the tagged cross-section. | A x eps_AFP = 0.92 +- 0.05 (previously assumed 0.55). | afp_acceptance/PLAN.md |
+| `afp_mix` | Accidental AFP-tag fraction f_acc from proton mixing, v2 (estimator A, gates G0-G9), events from non-AFP triggers, both runs (17.11). | Non-AFP triggers only: f_acc = 0.0087 +- 0.0044 (run 427929) and 0.0477 +- 0.0135 (run 428770); total relative errors 49.9 % and 28.4 %, dominated by the extrapolation and by half the difference of the methods. | [afp_mix/runs/lxplus/out_v2/RAPORT_DANE_v2.md](afp_mix/runs/lxplus/out_v2/RAPORT_DANE_v2.md), [afp_mix/README.md](afp_mix/README.md); method: [../afp_mixing.md](../afp_mixing.md) |
+| `afp_mix/FORCED` | Effect of excluding forced tags (18.11). | The nominal f_acc of run 428770 is unchanged (0.0477 -> 0.0473 / 0.0476); B(i)/A falls from 1.52 +- 0.29 to 1.13 +- 0.23, which would reduce the total error from 28.4 % to 13.2 % - not adopted (decision open). | [afp_mix/FORCED_2026-11-18/RAPORT.md](afp_mix/FORCED_2026-11-18/RAPORT.md) |
+| `afp_mix/TEMPLATE` | Template of N_tag / N_acc / f_acc per run x side x species x pT. | Preliminary; the mass shape of the accidental component differs for D+ in run 428770; the asymmetric errors proposed there are not adopted. | [afp_mix/TEMPLATE/RAPORT.md](afp_mix/TEMPLATE/RAPORT.md) |
+| `afp_mix/AFPTRIG` | Shape method (xi_cal - xi_AFP) for the AFP-triggered stream. | Preliminary: run 427929 f_acc = 0.0100 +- 0.0011 +- 0.0006 with all criteria passed; run 428770 fails the validation criteria (not usable). | [afp_mix/AFPTRIG/RAPORT.md](afp_mix/AFPTRIG/RAPORT.md) |
+| `sd_pred` | Pythia 8 particle-level predictions for D + proton in the AFP window 0.03 <= xi <= 0.10: soft / hard diffraction and Pomeron-flux variants (17.11). | Particle level, MC statistical errors only: R(D0) = 0.356 +- 0.005 % for the DL flux with the A3 parameters; soft scenarios span 0.11-0.82 %, hard diffraction with a dynamic gap gives 1.06 +- 0.01 %; superseded as the nominal prediction by `sd_var`. | [sd_pred/RAPORT.md](sd_pred/RAPORT.md) (tables: sd_pred/out/tables.md) |
+| `sd_var` | Variation of the diffraction model in Pythia 8 (particle level) for the predicted tagged fraction. | Pythia 8.317, particle level: R(D0) = 0.384 +- 0.005 % (official A3), model envelope 0.154-1.53 %; predicted tagged fraction for D0 0.322 % (0.129-1.28 %) with the measured A x eps_AFP = 0.92 (0.191 % with the earlier 0.55). | [sd_var/RAPORT.md](sd_var/RAPORT.md), [sd_var/RAPORT_domkniecie.md](sd_var/RAPORT_domkniecie.md) |
+
+## Documents
+
+| topic | what | result in one sentence | file |
+|---|---|---|---|
+| `presentation` | Figures of the final results (F1-F9, tagged T1-T2), their scripts and the review page. | Figures in fig/ and local_tagged/; every number on a figure is read from its source file. | [presentation/PRZEGLAD.md](presentation/PRZEGLAD.md) |
+
+## Reviews and literature
+
+| topic | what | result in one sentence | file |
+|---|---|---|---|
+
+## Documents outside this directory
+
+- [`../METHODS_NOTE_DRAFT.md`](../METHODS_NOTE_DRAFT.md) (+ `.html`) - methods note draft; figures and their script in [`../figures/`](../figures/).
+- [`../TAGGED_ADDENDUM.md`](../TAGGED_ADDENDUM.md) - addendum with the proton-tagged results.
+- [`../refl_truth.md`](../refl_truth.md), [`../afp_mixing.md`](../afp_mixing.md), [`../signal_like_background.md`](../signal_like_background.md), [`../hyp.md`](../hyp.md) - method documents with data numbers.
+- [`../data_stream_428770.md`](../data_stream_428770.md) - finding on the data stream of the run-428770 ntuples.

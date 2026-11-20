@@ -1,0 +1,19 @@
+# Węzeł DAG DNET etap 3 — trening na GPU (DN3_GPU=1; VARS node, args, cpus, mem, disk, flavour, penv z dn3.dag).
+Q          = /afs/cern.ch/user/k/klyczak/private/charm_q/Q_lxplus
+universe   = vanilla
+executable = /bin/bash
+arguments  = $(Q)/dnet3/dn3_job.sh $(args)
+output     = $(Q)/logs/dnet3/dn3_$(node).$(ClusterId).out
+error      = $(Q)/logs/dnet3/dn3_$(node).$(ClusterId).err
+log        = $(Q)/logs/dnet3/dn3.log
+request_cpus   = $(cpus)
+request_gpus   = 1
+# 18.11 (etap 2): Tesla V100 (capability 7.0) nie jest obsługiwana przez torch 2.11 z LCG_110_cuda („no kernel image”)
+require_gpus   = Capability > 7.0
+request_memory = $(mem)
+request_disk   = $(disk)
++JobFlavour    = "$(flavour)"
+should_transfer_files = NO
+getenv     = False
+environment = "$(penv)"
+queue

@@ -1,0 +1,37 @@
+{
+ "t_submit": 1795066475,
+ "t_start": 1795067522,
+ "queue_wait_s": 1047,
+ "host": "b9g57n0023.cern.ch",
+ "gpu": "NVIDIA A100-PCIE-40GB, 40960 MiB",
+ "folds": {
+  "D0.tr.H+e04.mc.d5.s1": {
+   "device": "cuda",
+   "device_name": "NVIDIA A100-PCIE-40GB",
+   "sec": 51.8,
+   "sec_epoch": 2.59,
+   "sec_load": 5.2,
+   "sec_total": 67.2,
+   "epochs": 20,
+   "n_pool": 716430,
+   "n_train": 572656,
+   "best_epoch": 16,
+   "threads": 4,
+   "nparams": 89857
+  },
+  "D0.trp.H+e04.mc.d5.s1": {
+   "device": "cuda",
+   "device_name": "NVIDIA A100-PCIE-40GB",
+   "sec": 72.1,
+   "sec_epoch": 3.6,
+   "sec_load": 33.5,
+   "sec_total": 119.4,
+   "epochs": 20,
+   "n_pool": 716430,
+   "n_train": 572656,
+   "best_epoch": 16,
+   "threads": 4,
+   "nparams": 91205
+  }
+ }
+}

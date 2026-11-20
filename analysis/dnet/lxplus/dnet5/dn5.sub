@@ -1,0 +1,16 @@
+# Węzeł DAG DNET etap 5a — CPU (VARS node, args, cpus, mem, disk, flavour, soft, penv z dn5.dag).
+Q          = /afs/cern.ch/user/k/klyczak/private/charm_q/Q_lxplus
+universe   = vanilla
+executable = /bin/bash
+arguments  = $(Q)/dnet5/dn5_job.sh $(args)
+output     = $(Q)/logs/dnet5/dn5_$(node).$(ClusterId).out
+error      = $(Q)/logs/dnet5/dn5_$(node).$(ClusterId).err
+log        = $(Q)/logs/dnet5/dn5.log
+request_cpus   = $(cpus)
+request_memory = $(mem)
+request_disk   = $(disk)
++JobFlavour    = "$(flavour)"
+should_transfer_files = NO
+getenv     = False
+environment = "$(penv) DN5_SOFTNODE=$(soft)"
+queue

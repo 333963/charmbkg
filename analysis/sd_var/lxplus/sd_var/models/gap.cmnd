@@ -1,0 +1,2 @@
+! tłumienie małych przerw w rapidity w modelu własnym (domyślne Ownygap = 2, Ownypow = 5)
+SigmaDiffractive:OwndampenGap = on

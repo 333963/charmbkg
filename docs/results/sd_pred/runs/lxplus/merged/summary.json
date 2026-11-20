@@ -1,0 +1,158 @@
+{
+ "dif_A3": {
+  "njobs": 20,
+  "n_ok": 20000000,
+  "sigma_mb": 22.9975,
+  "n_D_tag": 38210.0
+ },
+ "dif_DL04": {
+  "njobs": 10,
+  "n_ok": 10000000,
+  "sigma_mb": 22.9975,
+  "n_D_tag": 18849.0
+ },
+ "dif_DL085": {
+  "njobs": 10,
+  "n_ok": 10000000,
+  "sigma_mb": 22.9975,
+  "n_D_tag": 18774.0
+ },
+ "dif_DL10": {
+  "njobs": 10,
+  "n_ok": 10000000,
+  "sigma_mb": 22.9975,
+  "n_D_tag": 19269.0
+ },
+ "dif_H1A": {
+  "njobs": 10,
+  "n_ok": 10000000,
+  "sigma_mb": 22.9975,
+  "n_D_tag": 19090.0
+ },
+ "dif_H1B": {
+  "njobs": 10,
+  "n_ok": 10000000,
+  "sigma_mb": 22.9975,
+  "n_D_tag": 19131.0
+ },
+ "dif_MBR": {
+  "njobs": 10,
+  "n_ok": 10000000,
+  "sigma_mb": 21.5029,
+  "n_D_tag": 11085.0
+ },
+ "dif_Monash": {
+  "njobs": 10,
+  "n_ok": 10000000,
+  "sigma_mb": 22.9975,
+  "n_D_tag": 20354.0
+ },
+ "dif_SaS": {
+  "njobs": 10,
+  "n_ok": 10000000,
+  "sigma_mb": 22.9975,
+  "n_D_tag": 19363.0
+ },
+ "dif_own_DL04": {
+  "njobs": 10,
+  "n_ok": 10000000,
+  "sigma_mb": 22.998,
+  "n_D_tag": 13679.0
+ },
+ "dif_own_DL07": {
+  "njobs": 10,
+  "n_ok": 10000000,
+  "sigma_mb": 22.998,
+  "n_D_tag": 8492.0
+ },
+ "dif_own_DL085": {
+  "njobs": 10,
+  "n_ok": 10000000,
+  "sigma_mb": 22.998,
+  "n_D_tag": 6524.0
+ },
+ "dif_own_DL10": {
+  "njobs": 10,
+  "n_ok": 10000000,
+  "sigma_mb": 22.998,
+  "n_D_tag": 4658.0
+ },
+ "dif_own_H1A": {
+  "njobs": 10,
+  "n_ok": 10000000,
+  "sigma_mb": 22.998,
+  "n_D_tag": 1810.0
+ },
+ "dif_own_H1B": {
+  "njobs": 10,
+  "n_ok": 10000000,
+  "sigma_mb": 22.998,
+  "n_D_tag": 2079.0
+ },
+ "dif_own_SaS": {
+  "njobs": 10,
+  "n_ok": 10000000,
+  "sigma_mb": 22.998,
+  "n_D_tag": 21364.0
+ },
+ "dif_sigPp25": {
+  "njobs": 10,
+  "n_ok": 10000000,
+  "sigma_mb": 22.9975,
+  "n_D_tag": 7391.0
+ },
+ "hq_incl": {
+  "njobs": 8,
+  "n_ok": 4000000,
+  "sigma_mb": 4.98404375,
+  "n_D_tag": 2026.0
+ },
+ "hq_t3": {
+  "njobs": 8,
+  "n_ok": 2000000,
+  "sigma_mb": 0.748465125,
+  "n_D_tag": 178293.0
+ },
+ "hq_t3_H1B": {
+  "njobs": 8,
+  "n_ok": 2000000,
+  "sigma_mb": 1.954455,
+  "n_D_tag": 159794.0
+ },
+ "hq_t3_SaS": {
+  "njobs": 8,
+  "n_ok": 2000000,
+  "sigma_mb": 0.9691995,
+  "n_D_tag": 204793.0
+ },
+ "hq_t4": {
+  "njobs": 10,
+  "n_ok": 2000000,
+  "sigma_mb": 0.3370796999999999,
+  "n_D_tag": 91348.0
+ },
+ "hq_t4_H1B": {
+  "njobs": 10,
+  "n_ok": 2000000,
+  "sigma_mb": 0.9051324000000001,
+  "n_D_tag": 78728.0
+ },
+ "hq_t4_SaS": {
+  "njobs": 10,
+  "n_ok": 2000000,
+  "sigma_mb": 0.4304071,
+  "n_D_tag": 104496.0
+ },
+ "nd_A3": {
+  "njobs": 100,
+  "n_ok": 100000000,
+  "sigma_mb": 55.5871,
+  "n_D_tag": 4692.0
+ },
+ "nd_Monash": {
+  "njobs": 40,
+  "n_ok": 40000000,
+  "sigma_mb": 55.5871,
+  "n_D_tag": 1732.0
+ }
+}

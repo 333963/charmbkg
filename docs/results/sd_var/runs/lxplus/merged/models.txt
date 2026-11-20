@@ -1,0 +1,50 @@
+# models.txt (sd_var, 19.11.2026) — model  njobs  nev/job  pliki cmnd (models/<x>.cmnd, czytane po kolei; późniejsze nadpisują)
+# TYLKO DOPISYWAĆ NA KOŃCU: ziarno = 1000000 + 10000·(numer wiersza) + numer joba. njobs = 0 → tylko krok xsec (σ per proces).
+# Prefiksy: dv_ = miękka dyfrakcja SD+DD+CD (krok xsec dla każdego: SoftQCD:all, 50 000 zd. → σ_ND/SD/DD/CD konfiguracji);
+#           nv_ = ND (proton wiodący + mianownik R); hv_ = twarda dyfrakcja HardQCD cc̄+bb̄ (incl = mianownik, t4 = dynamiczna przerwa).
+# Punkty odniesienia już policzone w sdpred (NIE powtarzane): nd_A3, nd_Monash, dif_A3, dif_Monash, dif_MBR, dif_sigPp25, dif_own_{SaS,DL07,DL04,DL085,DL10,H1A,H1B}, hq_incl, hq_t3*, hq_t4*.
+# Czasy (sdpred, lxplus): ND 2,5 ms/zd., dyfrakcja miękka 0,6–0,9 ms, HardQCD 1,3–1,6 ms.
+# --- G1: kształt (ξ, t) i σ dyfrakcji miękkiej
+dv_A3off       10 1000000 base_A3,proc_dif,a3off
+dv_A3alt       10 1000000 base_A3,proc_dif,a3off,flux_DL037
+dv_DL02        10 1000000 base_A3,proc_dif,flux_DL02,own
+dv_DL058       10 1000000 base_A3,proc_dif,flux_DL058,own
+dv_ap010       10 1000000 base_A3,proc_dif,ap010,own
+dv_ap040       10 1000000 base_A3,proc_dif,ap040,own
+dv_BI          10 1000000 base_A3,proc_dif,flux_BI,own
+dv_BS          10 1000000 base_A3,proc_dif,flux_BS,own
+dv_gap         10 1000000 base_A3,proc_dif,own,gap
+dv_MBRe08      10 1000000 base_A3,proc_dif,flux_MBR,mbr_e08
+dv_MBRa0125    10 1000000 base_A3,proc_dif,flux_MBR,mbr_a0125
+dv_ABMST       10 1000000 base_A3,proc_dif,abmst
+dv_ABMSTnogap  10 1000000 base_A3,proc_dif,abmst,abmst_nogap
+dv_SaSe07      10 1000000 base_A3,proc_dif,sas_e07
+# --- G3: modelowanie układu X (produkcja powabu przy ustalonym strumieniu DL ε = 0,07, σ jak SaS)
+dv_sigPp5      10 1000000 base_A3,proc_dif,own,sigPp5
+dv_sigPp25     10 1000000 base_A3,proc_dif,own,sigPp25
+dv_pomH1A      10 1000000 base_A3,proc_dif,own,pom_H1A
+dv_pomH1J      10 1000000 base_A3,proc_dif,own,pom_H1J
+dv_pomGKG      10 1000000 base_A3,proc_dif,own,pom_GKG
+dv_pompi       10 1000000 base_A3,proc_dif,own,pom_pi
+dv_pT0lo       10 1000000 base_A3,proc_dif,own,pT0lo
+dv_pT0hi       10 1000000 base_A3,proc_dif,own,pT0hi
+dv_CRqcd       10 1000000 base_A3,proc_dif,own,crqcd
+# --- G4: ND spójne z G3 (mianownik R i proton wiodący z resztek wiązki)
+nv_pT0lo       20 1000000 base_A3,proc_nd,pT0lo
+nv_pT0hi       20 1000000 base_A3,proc_nd,pT0hi
+nv_CRqcd       20 1000000 base_A3,proc_nd,crqcd
+# --- G5: twarda dyfrakcja (scenariusz alternatywny): pT0Ref, wybór b, PDF Pomeronu
+hv_incl_pT0lo   8  500000 base_A3,proc_hq,pT0lo
+hv_t4_pT0lo    10  200000 base_A3,proc_hq,pT0lo,hard_t4
+hv_incl_pT0hi   8  500000 base_A3,proc_hq,pT0hi
+hv_t4_pT0hi    10  200000 base_A3,proc_hq,pT0hi,hard_t4
+hv_incl_pT0x    8  500000 base_A3,proc_hq,pT0x
+hv_t4_pT0x     10  200000 base_A3,proc_hq,pT0x,hard_t4
+hv_t4_bSel2    10  200000 base_A3,proc_hq,hard_t4,bsel2
+hv_t4_bSel3    10  200000 base_A3,proc_hq,hard_t4,bsel3
+hv_t4_pomH1A   10  200000 base_A3,proc_hq,flux_H1A,pom_H1A,hard_t4
+hv_t4_pomGKG   10  200000 base_A3,proc_hq,pom_GKG,hard_t4
+# --- tylko xsec: σ_ND dla punktów odniesienia z sdpred (zamknięcie: ref_A3 ma dać σ_ND(nd_A3) = 55,59 mb)
+ref_A3          0       0 base_A3,proc_dif
+ref_MBR         0       0 base_A3,proc_dif,flux_MBR
+ref_own         0       0 base_A3,proc_dif,own

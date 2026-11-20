@@ -1,0 +1,50 @@
+# scenarios.txt (sd_var, 19.11.2026) — definicja scenariuszy i zbiorów USTALONA PRZED WYNIKAMI (zob. SD_var_2026-11-19/PLAN.md §4).
+# kolumny: scenariusz | rodzaj | licznik dyfrakcyjny | ND (miękkie) lub mianownik (twarde) | zbiór | grupa | odniesienie grupy | opis
+#  rodzaj: soft = ND + SD + DD + CD; hard = HardQCD cc̄+bb̄ z doHard typ 4 / ta sama produkcja bez doHard
+#  zbiór: N = nominał, A = rozsądne (wchodzi do niepewności), B = rozszerzone (tylko raportowane), Z = zamknięcie/kontrola
+#  grupa: M = pełne modele; P = parametry kształtu przy stałym σ; X = układ X; L = proton wiodący ND; H = twarda dyfrakcja
+#  modele bez prefiksu dv_/nv_/hv_ pochodzą z sdpred (SD_pred/runs/lxplus/merged)
+A3off        | soft | dv_A3off      | nd_A3    | N | M | -        | oficjalna konfiguracja ATLAS A3 (DL ε=0,07, mode 0, σ_SD 16 mb, bez CD)
+A3alt        | soft | dv_A3alt      | nd_A3    | A | M | A3off    | ATLAS A3 ALT (ε=0,037)
+SaS          | soft | dif_A3        | nd_A3    | A | M | A3off    | SaS (domyślny model Pythii; tune'y CMS, Monash)
+MBR          | soft | dif_MBR       | nd_A3    | A | M | A3off    | MBR domyślny (ε=0,104)
+MBRe08       | soft | dv_MBRe08     | nd_A3    | A | M | A3off    | MBR ε=0,08 (CMS 7 TeV)
+ABMST        | soft | dv_ABMST      | nd_A3    | A | M | A3off    | ABMST z rozszerzeniami Pythii (domyślne)
+ABMSTnogap   | soft | dv_ABMSTnogap | nd_A3    | B | M | A3off    | ABMST bez wymuszonej przerwy
+MBRa0125     | soft | dv_MBRa0125   | nd_A3    | B | M | A3off    | MBR α′=0,125
+SaSe07       | soft | dv_SaSe07     | nd_A3    | B | M | A3off    | SaS z ε=0,07 w widmie mas (eksploracyjne)
+DL07own      | soft | dif_own_DL07  | nd_A3    | Z | P | -        | odniesienie grup P i X: DL ε=0,07, σ jak SaS
+DL04         | soft | dif_own_DL04  | nd_A3    | A | P | DL07own  | ε=0,04
+DL058        | soft | dv_DL058      | nd_A3    | A | P | DL07own  | ε=0,058 (ATLAS, przerwy w rapidity)
+DL085        | soft | dif_own_DL085 | nd_A3    | A | P | DL07own  | ε=0,085 (domyślne Pythii, DL)
+ap010        | soft | dv_ap010      | nd_A3    | A | P | DL07own  | α′=0,10
+ap040        | soft | dv_ap040      | nd_A3    | A | P | DL07own  | α′=0,40
+BS           | soft | dv_BS         | nd_A3    | A | P | DL07own  | Berger–Streng, ta sama trajektoria
+DL02         | soft | dv_DL02       | nd_A3    | B | P | DL07own  | ε=0,02 (granica Pythii)
+DL10         | soft | dif_own_DL10  | nd_A3    | B | P | DL07own  | ε=0,10 (poza zakresem pomiaru ATLAS)
+BI           | soft | dv_BI         | nd_A3    | B | P | DL07own  | Bruni–Ingelman
+gap          | soft | dv_gap        | nd_A3    | B | P | DL07own  | tłumienie małych przerw
+H1A          | soft | dif_own_H1A   | nd_A3    | B | P | DL07own  | strumień H1 Fit A (dopasowany do twardej dyfrakcji ep)
+H1B          | soft | dif_own_H1B   | nd_A3    | B | P | DL07own  | strumień H1 Fit B
+SaSown       | soft | dif_own_SaS   | nd_A3    | Z | P | DL07own  | zamknięcie mode 0 wobec mode 1 (SaS)
+sigPp5       | soft | dv_sigPp5     | nd_A3    | A | X | DL07own  | σ_ref(Pom–p)=5 mb
+sigPp25      | soft | dv_sigPp25    | nd_A3    | A | X | DL07own  | σ_ref(Pom–p)=25 mb
+pomH1A       | soft | dv_pomH1A     | nd_A3    | A | X | DL07own  | PDF Pomeronu H1 2006 Fit A
+pomH1J       | soft | dv_pomH1J     | nd_A3    | A | X | DL07own  | PDF Pomeronu H1 2007 Jets
+pomGKG       | soft | dv_pomGKG     | nd_A3    | A | X | DL07own  | PDF Pomeronu GKG18 LO B
+pompi        | soft | dv_pompi      | nd_A3    | B | X | DL07own  | PDF Pomeronu jak π⁰
+pT0lo        | soft | dv_pT0lo      | nv_pT0lo | A | X | DL07own  | pT0Ref=2,30 (dyfrakcja i ND spójnie)
+pT0hi        | soft | dv_pT0hi      | nv_pT0hi | A | X | DL07own  | pT0Ref=2,60 (dyfrakcja i ND spójnie)
+CRqcd        | soft | dv_CRqcd      | nv_CRqcd | A | X | DL07own  | rekoneksja QCD + nowy model resztek (dyfrakcja i ND spójnie)
+NDMonash     | soft | dif_own_DL07  | nd_Monash| A | L | DL07own  | proton wiodący i mianownik z ND Monash
+NDCRqcd      | soft | dif_own_DL07  | nv_CRqcd | A | L | DL07own  | proton wiodący i mianownik z ND CRqcd
+hard_t4      | hard | hq_t4         | hq_incl  | N | H | -        | twarda dyfrakcja, strumień DL-A3 (nominał scenariusza twardego)
+hard_SaS     | hard | hq_t4_SaS     | hq_incl  | A | H | hard_t4  | strumień SaS
+hard_pT0lo   | hard | hv_t4_pT0lo   | hv_incl_pT0lo | A | H | hard_t4 | pT0Ref=2,30
+hard_pT0hi   | hard | hv_t4_pT0hi   | hv_incl_pT0hi | A | H | hard_t4 | pT0Ref=2,60
+hard_bSel2   | hard | hv_t4_bSel2   | hq_incl  | A | H | hard_t4  | bSelHard=2
+hard_pomGKG  | hard | hv_t4_pomGKG  | hq_incl  | A | H | hard_t4  | PDF Pomeronu GKG18 LO B
+hard_pomH1A  | hard | hv_t4_pomH1A  | hq_incl  | A | H | hard_t4  | strumień i PDF H1 2006 Fit A
+hard_H1B     | hard | hq_t4_H1B     | hq_incl  | A | H | hard_t4  | strumień H1 Fit B (PDF domyślne = Fit B LO)
+hard_pT0x    | hard | hv_t4_pT0x    | hv_incl_pT0x | B | H | hard_t4 | pT0Ref=3,00 (kraniec skanu 1901.05261)
+hard_bSel3   | hard | hv_t4_bSel3   | hq_incl  | B | H | hard_t4  | bSelHard=3 (skrajny wg dokumentacji)

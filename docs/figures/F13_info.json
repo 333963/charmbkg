@@ -1,0 +1,21 @@
+{
+ "species_rows_plotted": [
+  "D\u207a m(K\u03c0\u03c0), 30 % lumi",
+  "D\u2070 m(K\u03c0) from D* tag, full lumi",
+  "\u0394m(D*), full lumi (width only)"
+ ],
+ "summary_keys": [
+  "Dplus_WP70",
+  "Dplus_WP50",
+  "D0_veto_WP70",
+  "D0_veto_WP50",
+  "D0_keepboth_WP70",
+  "mKpi_tag_WP70",
+  "mKpi_tag_WP50",
+  "dm_WP70",
+  "dm_WP50",
+  "sagitta_Dplus",
+  "sagitta_D0_veto",
+  "sagitta_mKpi_tag"
+ ]
+}

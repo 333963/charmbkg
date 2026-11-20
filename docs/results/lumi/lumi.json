@@ -1,0 +1,194 @@
+{
+ "_meta": {
+  "tag": "OflLumi-Run3-003",
+  "tag_uwaga": "003 = tag oficjalnych plików GRL AFP low-mu (cvmfs 20231005/20231024); 004 daje identyczne L_del; 001/002 różnią się o -3/+7 % (427929) i +5/+7 % (428770); 005-007 zwracają 0",
+  "jednostka": "nb^-1",
+  "blad": "względny; kalibracja 2,2 % = ZAŁOŻENIE (wartość dla danych fizycznych 2022), live i kompletność osobno; konserwatywnie 7 % (rozrzut tagów 001-003)"
+ },
+ "427929": {
+  "HLT_mb_mbts_L1MBTS_1": {
+   "L": 0.47371,
+   "jednostka": "nb^-1",
+   "błąd": 0.01052,
+   "błąd_wzgl": 0.0222,
+   "błąd_wzgl_kalibracja_ZAŁOŻENIE": 0.022,
+   "błąd_wzgl_live": 0.003,
+   "tag": "OflLumi-Run3-003",
+   "LB_min": 119,
+   "LB_max": 324,
+   "n_LB": 189,
+   "preskala": [
+    1.0
+   ],
+   "L_wariant_live_wlasna_pozycja_L1": 0.47372,
+   "L_nasza_kopia_plikow": 0.46478,
+   "kompletnosc_plikow_ZAŁOŻENIE": 0.9811,
+   "źródło": "L_del: iLumiCalc/cvmfs GoodRunsLists data22_13p6TeV/20231005 (Inst_m_Lumi*DeltaT per LB); live: COOL /TRIGGER/LUMI/LVL1COUNTERS L1_RD0_FILLED TAV/TAP; preskala: drzewo = COOL L1xHLT (TAGREG v2); LB: GRL_MinBiasAFP_lowmu2022.xml ∩ nasze pliki"
+  },
+  "HLT_noalg_mb_L1MBTS_1": {
+   "L": 0.47371,
+   "jednostka": "nb^-1",
+   "błąd": 0.01052,
+   "błąd_wzgl": 0.0222,
+   "błąd_wzgl_kalibracja_ZAŁOŻENIE": 0.022,
+   "błąd_wzgl_live": 0.003,
+   "tag": "OflLumi-Run3-003",
+   "LB_min": 119,
+   "LB_max": 324,
+   "n_LB": 189,
+   "preskala": [
+    1.0
+   ],
+   "L_wariant_live_wlasna_pozycja_L1": 0.47372,
+   "L_nasza_kopia_plikow": 0.46478,
+   "kompletnosc_plikow_ZAŁOŻENIE": 0.9811,
+   "źródło": "L_del: iLumiCalc/cvmfs GoodRunsLists data22_13p6TeV/20231005 (Inst_m_Lumi*DeltaT per LB); live: COOL /TRIGGER/LUMI/LVL1COUNTERS L1_RD0_FILLED TAV/TAP; preskala: drzewo = COOL L1xHLT (TAGREG v2); LB: GRL_MinBiasAFP_lowmu2022.xml ∩ nasze pliki"
+  },
+  "_sprawdzian_MBTS": {
+   "N_TBP_L1_MBTS_1": 28914481,
+   "sigma_vis_zmierzone_mb": 60.81,
+   "sigma_vis_oczekiwane_mb": [
+    69.0,
+    72.0
+   ],
+   "stosunek": [
+    0.845,
+    0.881
+   ],
+   "L_z_MBTS_nb": [
+    0.4016,
+    0.4191
+   ],
+   "frakcja_przeciec_z_MBTS_1": 0.003551,
+   "MBTS_2/MBTS_1": 0.9509
+  },
+  "_run": {
+   "L_del": 0.47549,
+   "L_rec": 0.47371,
+   "live_RD0_FILLED": 0.99625,
+   "n_LB": 189,
+   "czas_s": 11313.0,
+   "mu_srednie_oficjalne": 0.00469,
+   "plateau_N_drzewo/TAV": 0.8417,
+   "kompletnosc_plikow": 0.9811,
+   "LB_z_ubytkiem_plikow(>3%)": [
+    140,
+    202,
+    207,
+    211,
+    217,
+    221,
+    222,
+    223,
+    271,
+    272,
+    275,
+    291,
+    295,
+    296,
+    316,
+    324
+   ]
+  }
+ },
+ "428770": {
+  "HLT_noalg_L1AFP_A_OR_C": {
+   "L": 0.46865,
+   "jednostka": "nb^-1",
+   "błąd": 0.01042,
+   "błąd_wzgl": 0.0222,
+   "błąd_wzgl_kalibracja_ZAŁOŻENIE": 0.022,
+   "błąd_wzgl_live": 0.0032,
+   "tag": "OflLumi-Run3-003",
+   "LB_min": 4,
+   "LB_max": 323,
+   "n_LB": 136,
+   "preskala": [
+    60.0,
+    120.0
+   ],
+   "L_wariant_live_wlasna_pozycja_L1": 0.47013,
+   "L_nasza_kopia_plikow": 0.46758,
+   "kompletnosc_plikow_ZAŁOŻENIE": 0.9977,
+   "źródło": "L_del: iLumiCalc/cvmfs GoodRunsLists data22_13p6TeV/20231005 (Inst_m_Lumi*DeltaT per LB); live: COOL /TRIGGER/LUMI/LVL1COUNTERS L1_RD0_FILLED TAV/TAP; preskala: drzewo = COOL L1xHLT (TAGREG v2); LB: GRL_MinBiasAFP_lowmu2022.xml ∩ nasze pliki"
+  },
+  "HLT_j20_L1AFP_A_OR_C": {
+   "L": 28.11892,
+   "jednostka": "nb^-1",
+   "błąd": 0.62496,
+   "błąd_wzgl": 0.0222,
+   "błąd_wzgl_kalibracja_ZAŁOŻENIE": 0.022,
+   "błąd_wzgl_live": 0.0032,
+   "tag": "OflLumi-Run3-003",
+   "LB_min": 4,
+   "LB_max": 323,
+   "n_LB": 136,
+   "preskala": [
+    1.0,
+    2.0
+   ],
+   "L_wariant_live_wlasna_pozycja_L1": 28.20776,
+   "L_nasza_kopia_plikow": 28.05501,
+   "kompletnosc_plikow_ZAŁOŻENIE": 0.9977,
+   "źródło": "L_del: iLumiCalc/cvmfs GoodRunsLists data22_13p6TeV/20231005 (Inst_m_Lumi*DeltaT per LB); live: COOL /TRIGGER/LUMI/LVL1COUNTERS L1_RD0_FILLED TAV/TAP; preskala: drzewo = COOL L1xHLT (TAGREG v2); LB: GRL_MinBiasAFP_lowmu2022.xml ∩ nasze pliki"
+  },
+  "HLT_noalg_L1J12": {
+   "L": 29.41046,
+   "jednostka": "nb^-1",
+   "błąd": 0.68497,
+   "błąd_wzgl": 0.0233,
+   "błąd_wzgl_kalibracja_ZAŁOŻENIE": 0.022,
+   "błąd_wzgl_live": 0.0076,
+   "tag": "OflLumi-Run3-003",
+   "LB_min": 4,
+   "LB_max": 323,
+   "n_LB": 136,
+   "preskala": [
+    1.0
+   ],
+   "L_wariant_live_wlasna_pozycja_L1": 29.18566,
+   "L_nasza_kopia_plikow": 29.34214,
+   "kompletnosc_plikow_ZAŁOŻENIE": 0.9977,
+   "źródło": "L_del: iLumiCalc/cvmfs GoodRunsLists data22_13p6TeV/20231005 (Inst_m_Lumi*DeltaT per LB); live: COOL /TRIGGER/LUMI/LVL1COUNTERS L1_RD0_FILLED TAV/TAP; preskala: drzewo = COOL L1xHLT (TAGREG v2); LB: GRL_MinBiasAFP_lowmu2022.xml ∩ nasze pliki"
+  },
+  "_regiony": {
+   "R1": {
+    "definicja": "HLT_noalg_L1AFP_A_OR_C",
+    "L": 0.46865,
+    "jednostka": "nb^-1",
+    "udział_LB_4-16": 0.0459,
+    "tag": "OflLumi-Run3-003",
+    "n_LB": 136
+   },
+   "R2": {
+    "definicja": "HLT_j20_L1AFP_A_OR_C ∧ ¬R1 (czynnik 1−1/60 z weta)",
+    "L": 27.65027,
+    "jednostka": "nb^-1",
+    "udział_LB_4-16": 0.0459,
+    "tag": "OflLumi-Run3-003",
+    "n_LB": 136
+   },
+   "R3": {
+    "definicja": "HLT_noalg_L1J12 ∧ ¬R1 ∧ ¬R2 (weto ¬R2 = cięcie fizyczne; L bez poprawki)",
+    "L": 29.41046,
+    "jednostka": "nb^-1",
+    "udział_LB_4-16": 0.0878,
+    "tag": "OflLumi-Run3-003",
+    "n_LB": 136
+   }
+  },
+  "_run": {
+   "L_del": 30.42974,
+   "L_rec": 29.41046,
+   "live_RD0_FILLED": 0.9665,
+   "n_LB": 136,
+   "czas_s": 8125.0,
+   "mu_srednie_oficjalne": 0.04519,
+   "plateau_N_drzewo/TAV": 0.9669,
+   "kompletnosc_plikow": 0.9977,
+   "LB_z_ubytkiem_plikow(>3%)": [
+    16
+   ]
+  }
+ }
+}

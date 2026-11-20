@@ -1,0 +1,21 @@
+# Sonda GPU DNET etap 5a — POZA DAG (nic od niej nie zależy). penv i wait przekazywane: condor_submit -append 'penv = …' -append 'wait = …'.
+# Job, który nie wystartuje (albo zostanie wstrzymany) przez $(wait) s od wysłania, usuwa się sam (periodic_remove).
+Q          = /afs/cern.ch/user/k/klyczak/private/charm_q/Q_lxplus
+universe   = vanilla
+executable = /bin/bash
+arguments  = $(Q)/dnet5/dn5_job.sh gpu
+output     = $(Q)/logs/dnet5/dn5_gpu.$(ClusterId).out
+error      = $(Q)/logs/dnet5/dn5_gpu.$(ClusterId).err
+log        = $(Q)/logs/dnet5/dn5_gpu.log
+request_cpus   = 4
+request_gpus   = 1
+# 18.11 (etap 2): Tesla V100 (capability 7.0) nie jest obsługiwana przez torch 2.11 z LCG_110_cuda („no kernel image”)
+require_gpus   = Capability > 7.0
+request_memory = 16GB
+request_disk   = 6GB
++JobFlavour    = "longlunch"
+periodic_remove = ((JobStatus == 1) || (JobStatus == 5)) && ((time() - QDate) > $(wait))
+should_transfer_files = NO
+getenv     = False
+environment = "$(penv) DN5_SOFTNODE=0"
+queue

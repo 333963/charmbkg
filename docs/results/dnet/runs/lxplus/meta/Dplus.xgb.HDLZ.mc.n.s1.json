@@ -1,0 +1,83 @@
+{
+ "sp": "Dplus",
+ "model": "xgb",
+ "feats": "HDLZ",
+ "bkg": "mc",
+ "dec": "n",
+ "seed": 1,
+ "full": false,
+ "tag": "Dplus.xgb.HDLZ.mc.n.s1",
+ "features": [
+  "log_pt",
+  "abs_eta",
+  "chi2",
+  "Lxy",
+  "impact_sig",
+  "abs_impact_z0",
+  "d_max_abs_d0",
+  "pointing",
+  "abs_cos_theta_star",
+  "abs_impact_sig",
+  "d_min_abs_d0",
+  "d_max_abs_z0",
+  "d_max_abs_eta",
+  "dedx_K",
+  "log_p_K",
+  "npts_K",
+  "dedx_pi_max",
+  "log_p_pi_min",
+  "mKpi1_over_mD_cn",
+  "mKpi2_over_mD_cn",
+  "dMinPt_cn",
+  "dMinPtRatio_cn",
+  "dMedPtRatio_cn",
+  "dMaxPtRatio_cn",
+  "maxdR_cn",
+  "absImpact_cn"
+ ],
+ "n_feat": 26,
+ "n_pool": 949548,
+ "n_sig": 148440,
+ "n_bkg": 801108,
+ "n_dec": 801108,
+ "nparams": 1189,
+ "npar_unit": "drzewa (fold 0)",
+ "folds": 5,
+ "fit": [
+  {
+   "best_it": 1138,
+   "sec": 47.4
+  },
+  {
+   "best_it": 1236,
+   "sec": 50.0
+  },
+  {
+   "best_it": 1145,
+   "sec": 44.5
+  },
+  {
+   "best_it": 1252,
+   "sec": 50.0
+  },
+  {
+   "best_it": 971,
+   "sec": 38.7
+  }
+ ],
+ "sec": 256.9,
+ "threads": 4,
+ "device": "cpu",
+ "hp": {
+  "tree_method": "hist",
+  "n_estimators": 1500,
+  "learning_rate": 0.05,
+  "max_depth": 6,
+  "min_child_weight": 5,
+  "subsample": 0.8,
+  "colsample_bytree": 0.8,
+  "reg_lambda": 1.0,
+  "early_stopping_rounds": 50,
+  "n_jobs": 0
+ }
+}

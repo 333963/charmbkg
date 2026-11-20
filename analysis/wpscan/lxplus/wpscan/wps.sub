@@ -1,0 +1,16 @@
+# WPSCAN — jeden węzeł (histogramy masa × score z app etapu 4; ~10 min, 1 rdzeń).
+Q          = /afs/cern.ch/user/k/klyczak/private/charm_q/Q_lxplus
+universe   = vanilla
+executable = /bin/bash
+arguments  = $(Q)/wpscan/wps_job.sh
+output     = $(Q)/logs/wpscan/wps.$(ClusterId).out
+error      = $(Q)/logs/wpscan/wps.$(ClusterId).err
+log        = $(Q)/logs/wpscan/wps.log
+request_cpus   = 1
+request_memory = 4GB
+request_disk   = 2GB
++JobFlavour    = "longlunch"
++JobBatchName  = "charm_wpscan"
+should_transfer_files = NO
+getenv     = False
+queue

@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "charmbkg"
+version = "1.3.0"
+description = "ATLAS open charm (minimum bias 2022): tło podobne do sygnału — generatory i kontrole tła pod pikiem D, hipotezy D0 K↔π (arbiter PID), SALAD"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.10"
+dependencies = ["numpy", "pandas", "h5py", "scipy", "scikit-learn", "pyyaml"]
+
+[project.optional-dependencies]
+fit = ["iminuit>=2.20", "matplotlib"]          # szablon refleksji / fit masy
+xgb = ["xgboost"]
+flow = ["torch", "zuko"]                       # flow / FETA (SALAD, SB i kopuła działają bez torcha)
+parquet = ["pyarrow"]                          # hyp-extract
+dev = ["pytest", "ruff", "iminuit>=2.20", "matplotlib", "xgboost", "pyarrow"]   # pyarrow: testy parquet (dstar_tag, hyp-extract, analysis/afp_mix)
+all = ["charmbkg[fit,xgb,flow,parquet,dev]"]
+
+[project.scripts]
+charmbkg = "charmbkg.cli:main"
+charmbkg-bkggen = "charmbkg.cli:bkggen_main"
+
+[tool.setuptools.packages.find]
+include = ["charmbkg*"]
+
+[tool.setuptools.package-data]
+charmbkg = ["data/*.yaml", "data/*.json"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = ["slow: testy >10 s — pomijane w CI: pytest -m 'not slow'"]
+
+[tool.ruff]
+line-length = 150
+target-version = "py310"
+include = ["charmbkg/**/*.py", "tests/**/*.py", "scripts/**/*.py", "pyproject.toml"]
+
+[tool.ruff.lint]
+select = ["F", "E9"]

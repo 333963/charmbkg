@@ -1,0 +1,12 @@
+lancuch,LB,LB_COOL_wlaczone,LB_zgodne_<1%,max|stos-1|,drzewo,COOL_L1,COOL_HLT,drzewo_L1,L1_zgodne
+HLT_j20_L1MBTS_2,189,189,189,0.0,[np.float64(1.0)],[np.float64(1.0)],[np.float64(1.0)],[np.float64(1.0)],True
+HLT_mb_mbts_L1MBTS_1,189,189,189,0.0,[np.float64(1.0)],[np.float64(1.0)],[np.float64(1.0)],[np.float64(1.0)],True
+HLT_mb_sptrk_L1MBTS_1,189,189,189,0.0,[np.float64(1.0)],[np.float64(1.0)],[np.float64(1.0)],[np.float64(1.0)],True
+HLT_mb_sptrk_pt2_L1MBTS_2,189,189,189,0.0,[np.float64(1.0)],[np.float64(1.0)],[np.float64(1.0)],[np.float64(1.0)],True
+HLT_mb_sptrk_pt4_L1AFP_A_OR_C,189,189,189,0.0,[np.float64(1.0)],[np.float64(1.0)],[np.float64(1.0)],[np.float64(1.0)],True
+HLT_mb_sptrk_pt4_L1MBTS_2,189,189,189,0.0,[np.float64(1.0)],[np.float64(1.0)],[np.float64(1.0)],[np.float64(1.0)],True
+HLT_noalg_L1AFP_A_OR_C,189,189,189,0.0,[np.float64(1.0)],[np.float64(1.0)],[np.float64(1.0)],[np.float64(1.0)],True
+HLT_noalg_L1J12,189,189,189,0.0,[np.float64(1.0)],[np.float64(1.0)],[np.float64(1.0)],[np.float64(1.0)],True
+HLT_noalg_L1RD0_FILLED,189,0,189,0.0,[np.float64(0.0)],[np.float64(143.66)],[np.float64(-1.0)],[np.float64(143.66)],True
+HLT_noalg_mb_L1MBTS_1,189,189,189,0.0,[np.float64(1.0)],[np.float64(1.0)],[np.float64(1.0)],[np.float64(1.0)],True
+HLT_noalg_mb_L1MBTS_2,189,189,189,0.0,[np.float64(1.0)],[np.float64(1.0)],[np.float64(1.0)],[np.float64(1.0)],True

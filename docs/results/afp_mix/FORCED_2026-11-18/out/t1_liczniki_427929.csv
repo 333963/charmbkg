@@ -1,0 +1,11 @@
+maska,N,w_sel,w_sel_tagAC,w_sel_zD,w_sel_zD_tagAC,w_sel_nietag,w_sel_nSel_lt5
+sel (nominał: GRL ∧ nie-AFP(11) ∧ npu0),28962571,23626322,703247,3410405,19539,22923075,8444529
+"tagowane, wymuszone (pełne bity: ¬S_nieAFP ∧ S_AFP)",87,0,0,0,0,0,0
+"tagowane, bez żadnego łańcucha S",2,0,0,0,0,0,0
+"tagowane, ¬S13 ale z innym łańcuchem nie-AFP z S (j10f, EM, MU…)",703400,699229,699229,17563,17563,0,429412
+"nietagowane, ¬S13",27358372,22196171,0,2856364,0,22196171,8010787
+"nietagowane, ¬S13 ∧ TBP L1_AFP",251084,91789,0,2590,0,91789,56603
+"nietagowane, ¬S13 ∧ TBP L1_AFP ∧ ≥1 proton AFP",226235,72010,0,1686,0,72010,45141
+wykluczone W1a,87,0,0,0,0,0,0
+wykluczone W1,251171,91789,0,2590,0,91789,56603
+wykluczone W2,28061861,22895400,699229,2873927,17563,22196171,8440199
